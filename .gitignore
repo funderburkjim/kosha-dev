@@ -1,0 +1,6 @@
+# Emacs backup
+*~
+temp*
+__pycache__
+apps*
+downloads/*
