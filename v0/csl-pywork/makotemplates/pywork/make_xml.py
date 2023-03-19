@@ -35,8 +35,8 @@ def dig_to_xml(xin):
 def dbgout(dbg,s):
  if not dbg:
   return
- filedbg = "make_xml_dbg.txt"
- fout = codecs.open(filedbhg,"a","utf-8")
+ filedbg = "temp_make_xml_dbg.txt"
+ fout = codecs.open(filedbg,"a","utf-8")
  fout.write(s + '\n')
  fout.close()
 def construct_xmlhead(hwrec):
@@ -77,39 +77,55 @@ def construct_xmlstring(datalines,hwrec):
 <k1>kaRwaka-klI<meanings>romaharza,sUcyagra,kzudravErin
 kawakaM kaRWake sEnye nitambe parvatasya ca .
 kaRwakaM romaharze syAt sUcyagre kzudravEriRi .. 3 ..
- """
- for i,x in enumerate(datalines):
-  if not x.startswith('<'):
-   y = '<lb/><s>%s</s>' % x
-   datalines1.append(y)
-   continue
-  yerr = '<lb/><!-- %s -->' % x
-  m = re.search(r'<k1>(.*?)<meanings>(.*?)$',x)
-  if m == None:  # error condition 
-   datalines1.append(yerr)
-   continue
-  k1_str = m.group(1)
-  meanings_str = m.group(2)
-  y = '<lb/><s>%s</s> meanings <s>%s</s>' %(k1_str, meanings_str)
-  datalines1.append(y)
- datalines = datalines1
 
- bodylines = [dig_to_xml(x) for x in datalines]
- if hwrec.type != None:
-  bodylines = body_alt(bodylines,hwrec)
-%if dictlo == 'inm':
- bodylines = body_inm(bodylines)
-%endif
-%if dictlo == 'bop':
- # bop closing divs is awkward in presence of <F>X</F>
- bodylines = body_bop(bodylines)
-%endif
- body0 = ' '.join(bodylines)
- dbgout(dbg,"chk4: %s" % body0)
- body = body0
- dbgout(dbg,"body0: %s" % body0)
- ##3a. Remove <LEND>. datalines does not include <LEND>. See get_datalines
- #body = body.replace('<LEND>','') # Line ending mark needs to be removed.
+<H1><h><key1>kawaka</key1><key2>kawaka</key2></h>
+ <body>
+<lb/><s>kawaka-klI</s> meanings <s>kaRWaka,sEnya,parvatanitamba</s> 
+<lb/><s>kaRwaka-klI</s> meanings <s>romaharza,sUcyagra,kzudravErin</s> 
+<lb/><s>kawakaM kaRWake sEnye nitambe parvatasya ca .</s> 
+<lb/><s>kaRwakaM romaharze syAt sUcyagre kzudravEriRi .. 3 ..</s>
+</body>
+<tail><L>3</L><pc>140</pc></tail></H1>
+ """
+ # paratition datalines into hwdetails and entrydetails
+ hwdetails = []
+ entrydetails = []
+ for i,x in enumerate(datalines):
+  if x.startswith('<'):
+   hwdetails.append(x)
+  else:
+   entrydetails.append(x)
+ # add formatting to entrydetails
+ entrydetails1 = []
+ for i,x in enumerate(entrydetails):
+  y = '<s>%s</s>' % x
+  z = '<entrydetail>%s</entrydetail>' % y
+  entrydetails1.append(z)
+ entrydetails_str = ''.join(entrydetails1)
+                                 
+ # add formatting to hwdetails
+ hwdetails1 = []
+ for i,x in enumerate(hwdetails):
+  yerr = '<div> %s -->' % x
+  m = re.search(r'<k1>(.*?)<meanings>(.*?)$',x)
+  if m == None:  # error condition
+   y = '<!-- ERROR wrong form: %s -->' %x
+   hwdetails1.append(y)
+  else:
+   hw = m.group(1)
+   meaning = m.group(2)
+   y1 = '<hw><s>%s</s></hw>' % hw
+   y2 = '<meaning><s>%s</s></meaning>' % meaning
+   y = '%s%s' % (y1,y2)
+   z = '<hwdetail>%s</hwdetail>' % y
+   hwdetails1.append(z)
+ # string form
+ hwdetails_str = ''.join(hwdetails1)
+ # construct body0, by combining hwdetails and entrydetails
+ bodya = '<hwdetails>' + hwdetails_str + '</hwdetails>'
+ bodyb = '<entrydetails>' + entrydetails_str +'</entrydetails>'
+ body = bodya + bodyb
+ dbgout(dbg,"body: %s" % body)
  #4. construct result
  data = "<H1><h>%s</h><body>%s</body><tail>%s</tail></H1>" % (h,body,tail)
  #5. Close the <div> elements
@@ -201,6 +217,7 @@ def make_xml(filedig,filehw,fileout):
  else:
   print("WARNING: make_xml.py:",nerr,"records records not parsed by ET")
 if __name__=="__main__":
+ print('make_xml.py BEGINS !!!!!')
  filein = sys.argv[1] # xxx.txt
  filein1 = sys.argv[2] #xxxhw2.txt
  fileout = sys.argv[3] # xxx.xml
