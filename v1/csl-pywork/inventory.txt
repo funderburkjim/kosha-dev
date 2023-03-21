@@ -1,0 +1,96 @@
+*:pywork/hwparse.py:T
+; templates for some or all dictionaries
+*:pywork/hw.py:T
+*:pywork/redo_hw.sh:T
+*:pywork/redo_xml.sh:T
+; redo_xml.sh calls redo_postxml.sh
+*:pywork/redo_postxml.sh:T
+; -------------------------------------------
+; constant files for some or all dictionaries
+*:pywork/hw0.py:C
+*:pywork/hw2.py:C
+*:pywork/parseheadline.py:C
+*:pywork/updateByLine.py:C
+; --------------------------------------------------------------
+; files for updating web/sqlite. 
+;  Use Python sqlite rather than sqlite3
+; --------------------------------------------------------------
+*:pywork/sqlite/redo.sh:T
+*:pywork/sqlite/sqlite.py:C
+; --------------------------------------------------------------
+; files for updating web/sqlite.  OLD - changed 12-16-2020
+; All but redo.sh now Deleted (formerly T (template))
+; D indicates these files will be deleted in the target dictionary
+; directories, if present. This is to remove unused code.
+; --------------------------------------------------------------
+*:pywork/sqlite/def.sql:D
+*:pywork/sqlite/make_input.php:D
+;  *:pywork/sqlite/redo.sh:T
+; --------------------------------------------------------------
+; files for update webtc2/query_dump.txt
+; --------------------------------------------------------------
+; init_query.py was a template in websanlexicon -- but no template code found
+; check for equivalence in skd
+*:pywork/webtc2/init_query.py:C
+*:pywork/webtc2/redo.sh:T
+; 10-11-2019: Changed make_xml.py from 'CD' to 'T'
+*:pywork/make_xml.py:T
+; 10-13-2019: Changed ${dictlo}.dtd from 'CD' to 'T'
+; Note new syntax in 2nd parameter.
+*:pywork/one.dtd pywork/${dictlo}.dtd:T
+; -------------------------------------------
+; distinct files for some or all dictionaries
+; -------------------------------------------
+;*:pywork/make_xml.py:CD
+; these two should be combined into a template
+pw pwg:pywork/make_xml_ls.py:CD
+;*:pywork/${dictlo}.dtd:CD
+; This xxx_hwextra.txt now generated from generate_orig.sh (11-04-2019)
+;*:pywork/hwextra/${dictlo}_hwextra.txt:CD
+;  not yet initialized in init_distinctfiles
+; xxx-meta2.txt and xxxheader.xml now generated from generate_orig.sh (11-06-2019)
+;*:pywork/${dictlo}-meta2.txt:CD
+;*:pywork/${dictlo}header.xml:CD
+; --------------------------------------------------------------
+; -- abbreviations
+; --------------------------------------------------------------
+;   Currently, treat as distinct files
+;   Later, try to get all abbreviations to be the same,
+;   so templates can be used.
+;   also xxx to redo_postxml.sh for abbreviations
+harsa dummy:pywork/${dictlo}ab/${dictlo}ab.sql:CD
+harsa dummy:pywork/${dictlo}ab/${dictlo}ab_input.txt:CD
+harsa dummy:pywork/${dictlo}ab/readme.txt:CD
+harsa dummy:pywork/${dictlo}ab/redo.sh:CD
+harsa dummy:pywork/${dictlo}ab/redo_${dictlo}ab.sh:CD
+mw:pywork/${dictlo}ab/check.py:CD
+; --------------------------------------------------------------
+; --------------------------------------------------------------
+; -- literary sources: ap90, ben, sch
+; --------------------------------------------------------------
+ben ap90 sch:pywork/${dictlo}auth/redo.sh:CD
+ben ap90 sch:pywork/${dictlo}auth/readme.org:CD
+ben ap90 sch:pywork/${dictlo}auth/tooltip.txt:CD
+ben ap90 sch:pywork/${dictlo}auth/tooltips.sql:CD
+; --------------------------------------------------------------
+; ---- mwkeys: This is used with sanhw1.  Not sure if actually used in displays
+; --------------------------------------------------------------
+mw:pywork/mwkeys/extract_keys_a.py:CD
+; extract_keys.sh, extract_keys_a.sh, extract_keys_b.sh now in redo.sh
+; they are recoded from CD (copy-distinct) to D (delete)
+mw:pywork/mwkeys/extract_keys_a.sh:D
+mw:pywork/mwkeys/extract_keys_b.py:CD
+mw:pywork/mwkeys/extract_keys_b.sh:D
+mw:pywork/mwkeys/extract_keys.py:CD
+mw:pywork/mwkeys/extract_keys.sh:D
+mw:pywork/mwkeys/mwkeys.sql:CD
+mw:pywork/mwkeys/redo_mwkeys.sh:CD
+; redo.sh is changed to a template, so can use python3 on mw
+mw:pywork/mwkeys/redo.sh:T
+; ------------------------------------------------
+; downloads directory
+; ------------------------------------------------
+*:downloads/redo_all.sh:C
+*:downloads/redo_txt.sh:T
+*:downloads/redo_xml.sh:T
+*:downloads/redo_web.sh:T
