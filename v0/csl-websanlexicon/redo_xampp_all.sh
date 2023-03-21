@@ -1,1 +1,1 @@
-sh generate_web.sh harsa  ../../harsa
+sh generate_web.sh harsa  ../apps/harsa

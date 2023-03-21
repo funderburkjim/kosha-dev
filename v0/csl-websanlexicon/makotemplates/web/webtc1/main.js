@@ -184,7 +184,7 @@ function keyboard_parms(keyserver,listurlFlag) {
     }
    var ans = 
    url + 
-   "?key=" +escape(word) + 
+   "?key=" + word + //escape(word) solve error 400 problem
    "&keyboard=" +escape("yes") +
    "&inputType=" +escape(inputType) +
    "&unicodeInput=" +escape(unicodeInput) +
