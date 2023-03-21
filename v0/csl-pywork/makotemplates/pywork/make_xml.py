@@ -144,6 +144,30 @@ def xml_header(xmlroot):
  lines = [x.strip() for x in lines if x.strip()!='']
  return lines
 
+def get_k1(s):
+ parts = s.split('-')
+ if len(parts) > 2:
+  print('WARNING: more than one gender',s)
+ return parts[0]
+
+def get_datalines1(hw,datalines):
+ ans= []
+ for line in datalines:
+  m = re.search(r'<k1>(.*?)<meanings>(.*?)$',line)
+  if m == None: # keep verselines
+   ans.append(line)
+   continue
+  # keep line only when hw matches one of the headwords of line
+  k1 = get_k1(m.group(1))
+  meanings_str = m.group(2)
+  meaning_items = meanings_str.split(',')
+  meanings_k1 = [get_k1(item) for item in meaning_items]
+  allhws = [k1] + meanings_k1
+  if hw in allhws:
+   ans.append(line)
+  # otherwise, the line is not kept.
+ return ans
+
 def get_datalines(hwrec,inlines):
  # for structure of hwrec, refer to hwparse.py
  n1 = int(hwrec.ln1)
@@ -158,7 +182,10 @@ def get_datalines(hwrec,inlines):
  idx1 = n1 - 1
  idx2 = n2 - 1
  datalines = inlines[idx1:idx2+1]
- return datalines
+ # restrict further to the hwdetails that mention this hw
+ hw = hwrec.k1
+ datalines1 = get_datalines1(hw,datalines)
+ return datalines1
 
 def make_xml(filedig,filehw,fileout):
  # slurp txt file into list of lines
