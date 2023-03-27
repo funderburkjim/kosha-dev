@@ -50,14 +50,29 @@ class BasicAdjust {
  $dbg = false;
  $line = preg_replace('|<hwdetails>(.*?)</hwdetails>|',
          '<div style="background-color: beige;">\1</div>',$line);
+ /*
  $line = preg_replace('|<hwdetail><hw>(.*?)</hw><meaning>(.*?)</meaning></hwdetail>|',
      '<div><b>\1</b> meaning(s) \2</div>',
      $line);
+ */
+  $line = preg_replace_callback('|<hwdetail><hw>(.*?)</hw><meaning>(.*?)</meaning></hwdetail>|',
+    'BasicAdjust::meaning_callback',
+     $line);
+ 
  $line = preg_replace('|<entrydetails>(.*?)</entrydetails>|',
    '<lb/>\1',$line);
  $line = preg_replace('|<entrydetail>(.*?)</entrydetail>|',
            '<div>\1</div>',$line);
  return $line;
+}
+public function meaning_callback($matches) {
+ // OLD: <hwdetail>naga-pum</hw><meaning>sarpa,gaja,sirsa</meaning><hwdetail>
+ // NEW: <div><b>naga-pum</b> meaning(s) sarpa, gaja, sirsa</div>
+ $hw = $matches[1];
+ $meanings = $matches[2];  // a,b,c
+ $meanings1 = str_replace(',', ', ',$meanings);
+ $ans = "<div><b>$hw</b> meaning(s) $meanings1</div>";
+ return $ans;
 }
 
 }
