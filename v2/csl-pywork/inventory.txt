@@ -11,6 +11,8 @@
 *:pywork/hw2.py:C
 *:pywork/parseheadline.py:C
 *:pywork/updateByLine.py:C
+*:pywork/xml_to_xml1.py:C
+*:pywork/xml1_to_xml.py:C
 ; --------------------------------------------------------------
 ; files for updating web/sqlite. 
 ;  Use Python sqlite rather than sqlite3
