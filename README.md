@@ -25,3 +25,5 @@ sh generate_dict.sh harsa  ../apps/harsa
 http://localhost/kosha-dev/v1/apps/harsa/web/
 ```
 
+# v2 version
+

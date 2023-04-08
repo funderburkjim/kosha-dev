@@ -15,7 +15,7 @@ alldictparms = {
   "dictyear":"2023",
   "dictaccent":False,
   "webtc2devatextoption":True,
-  "dictwc":"https://www.worldcat.org/title/Anekārthanāmamālā of Harṣakīrti/oclc/320893849",
+  "dictwc":u"https://www.worldcat.org/title/Anekārthanāmamālā of Harṣakīrti/oclc/320893849",
   "dictbe":u"Anekārthanāmamālā of Harṣakīrti",
   "dicttitle":u"Anekārthanāmamālā of Harṣakīrti",
  },
