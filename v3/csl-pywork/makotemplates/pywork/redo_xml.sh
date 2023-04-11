@@ -1,8 +1,8 @@
 echo "BEGIN redo_xml.sh"
-%if cologne_flag:
+
 echo "construct ${dictlo}.xml..."
 python3 make_xml.py ../orig/${dictlo}.txt ${dictlo}hw.txt ${dictlo}.xml # > redoxml_log.txt
-%else:
+
 echo "construct ${dictlo}.xml..."
 python3 make_xml.py ../orig/${dictlo}.txt ${dictlo}hw.txt ${dictlo}.xml # > redoxml_log.txt
 echo "construct ${dictlo}1.xml..."
@@ -14,7 +14,7 @@ echo "Ideally, there should only no difference"
 diff ${dictlo}.xml temp_${dictlo}2.xml
 echo "[END OF diff]"
 echo ""
-%endif
+
 echo "\nxmllint on ${dictlo}.xml..."
 echo "SKIPPING xmllint validity check"
 # xmllint --noout --valid ${dictlo}.xml
