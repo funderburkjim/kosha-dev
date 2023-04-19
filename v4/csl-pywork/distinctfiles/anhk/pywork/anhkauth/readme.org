@@ -1,0 +1,11 @@
+
+readme.org for anhkauth
+04-12-2023  Probably not used for anhk
+
+Modify tooltip.txt
+  Format: 2 tab-delimited fields.
+  abbrev\ttooltip
+  
+Rerun redo.sh
+
+
