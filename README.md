@@ -37,3 +37,19 @@ http://localhost/kosha-dev/v1/apps/harsa/web/
   Change dictionary name to ANHK.
   Refer https://github.com/sanskrit-lexicon/COLOGNE/issues/405
 ```
+## v4 version
+Add dictionary abch (Abhidhānacintāmaṇi of Hemacandrācārya)
+Primary file source is v4/prep/abch/abch1.txt  (Devanagari).
+To reconstruct the app
+# assume in directory v4  of repository
+sh redo.sh abch
+```
+this script does the following:
+# a. construct abch.txt (slp1). This form is basis for other steps
+cd prep/abch
+sh redo.sh
+# b. Reconstruct displays in v4/apps/abch/web/
+cd ../../   # back to kosha-dev/v4
+cd csl-pywork
+sh generate_dict_sh abch ../apps/abch
+```
