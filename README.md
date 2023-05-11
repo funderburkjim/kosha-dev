@@ -50,7 +50,9 @@ this script does the following:
 # a. construct abch.txt (slp1). This form is basis for other steps
 cd prep/abch
 sh redo.sh
-# b. Reconstruct displays in v4/apps/abch/web/
+# b. abch.txt from prep to csl-orig/abch
+cp prep/abch.txt csl-orig/abch/
+# c. Reconstruct displays in v4/apps/abch/web/
 cd ../../   # back to kosha-dev/v4
 cd csl-pywork
 sh generate_dict_sh abch ../apps/abch
