@@ -175,6 +175,7 @@ samudravijayaScASvasenaH sidDArTa eva ca .. 38 ..
 <LEND>
 <L>12<pc>5
 <eid>17<syns>arhanmAtf-strI,marudevA-strI,vijayA-strI,senA-strI,sidDArTA-strI,maNgalA-strI,susImA-strI,pfTvI-strI,lakzmaRA-strI,rAmA-strI,nandA-strI,vizRu-strI,jayA-strI,SyAmA-strI,suyaSA-strI,suvratA-strI,acirA-strI,SrI-strI,devI-strI,praBAvatI-strI,padmA-strI,vaprA-strI,SivA-strI,vAmA-strI,triSalA-strI
+marudevA vijayA senA sidDArTA ca maNgalA .
 tataH susImA pfTvI lakzmaRA rAmA tataH param .. 39 ..
 nandA vizRurjayA SyAmA suyaSAH suvratAcirA .
 SrIrdevI praBAvatI ca padmA vaprA SivA taTA .. 40 ..
@@ -7608,8 +7609,7 @@ sEkataM cAntarIpaM tu dvIpamantarjale tawam .. 1078 ..
 tatparaM pAramavAraM tvarvAkpAtraM tadantaram .
 <LEND>
 <L>1334<pc>42
-<eid>2669<syns>nadI-strI,hiraRyavarRA-strI,roDovakrA-strI,taraNgiRI-strI,sinDu-puMstrI,SEvalinI-strI,vahA-strI,hradinI-strI,srotasvinI-strI,nimnagA-strI,srotas-klI,nirJariRI-strI,sarit-strI,tawinI-strI,kUlaNkazA-strI,vAhinI-strI,karzU-strI,dvIpavatI-strI,samudradayitA-strI,DunI-strI,sravantI-strI,sarasvatI-strI,parvatajA-strI,jalaDigA-strI,kulyA-strI,jambAlinI-strI
-DUnI,sravantI,sarasvatI,parvatajA,ApagA,jalaDigA,kulyA,jambAlinI
+<eid>2669<syns>nadI-strI,hiraRyavarRA-strI,roDovakrA-strI,taraNgiRI-strI,sinDu-puMstrI,SEvalinI-strI,vahA-strI,hradinI-strI,srotasvinI-strI,nimnagA-strI,srotas-klI,nirJariRI-strI,sarit-strI,tawinI-strI,kUlaNkazA-strI,vAhinI-strI,karzU-strI,dvIpavatI-strI,samudradayitA-strI,DunI-strI,sravantI-strI,sarasvatI-strI,parvatajA-strI,jalaDigA-strI,kulyA-strI,jambAlinI-strI,DUnI-strI,sravantI-strI,sarasvatI-strI,parvatajA-strI,ApagA-strI,jalaDigA-strI,kulyA-strI,jambAlinI-strI
 nadI hiraRyavarRA syAdroDovakrA taraNgiRI .. 1079 ..
 sinDuH SEvalinI vahA ca hradinI srotasvinI nimnagA
 sroto nirJariRI saricca tawinI kUlaMkazA vAhinI .
@@ -8695,7 +8695,6 @@ pataNgaH SalaBaH kzudrA saraGA maDumakzikA .. 1213 ..
 <eid>3077<syns>mAkzika-klI,maDu-klI
 <eid>3078<syns>maDUcCizwa-klI,sikTaka-klI
 mAkzikAdi maDu kzOdraM maDUcCizwaM tu sikTakam .
-<LEND>
 <L>1526<pc>47
 <eid>3079<syns>varvaRA-strI
 <eid>3080<syns>puttikA-strI,pataNgikA-strI

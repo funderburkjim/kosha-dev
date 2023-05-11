@@ -22,9 +22,13 @@ def convert(line,tranin,tranout,iline):
   print('line=',line)
   print('parts=',parts)
  newparts = []
- for part in parts:
+ for ipart,part in enumerate(parts):
   if part.startswith('<'):
    ## tag not changed
+   newpart = part
+  elif (ipart != 0) and (parts[ipart-1] == '<eid>'):
+   # 05-11-2023 Don't convert the 'eid' text.
+   # For abch:  <eid>N<syns>X
    newpart = part
   else:
    newpart = transcoder.transcoder_processString(part,tranin,tranout)
