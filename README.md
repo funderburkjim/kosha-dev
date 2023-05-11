@@ -39,9 +39,11 @@ http://localhost/kosha-dev/v1/apps/harsa/web/
 ```
 ## v4 version
 Add dictionary abch (Abhidhānacintāmaṇi of Hemacandrācārya)
+
 Primary file source is v4/prep/abch/abch1.txt  (Devanagari).
+
 To reconstruct the app
-# assume in directory v4  of repository
+### assume in directory v4  of repository
 sh redo.sh abch
 ```
 this script does the following:
