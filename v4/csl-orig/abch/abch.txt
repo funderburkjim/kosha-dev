@@ -898,7 +898,7 @@ prAkprAcInaM ca same pratyaktu syAtpratIcInam .. 168 ..
 <eid>230<syns>vAyavyA-strI,uttarapaScimA-strI
 <eid>231<syns>kOberI-strI,uttarA-strI
 <eid>232<syns>ESAnI-strI,uttarapUrvA-strI
-tiryagdiSAM tu pataya indrAgniyamarnErFtAH .
+tiryagdiSAM tu pataya indrAgniyamanErftAH .
 varuRo vAyukuberAvISAnaSca yaTAkramam .. 169 ..
 <LEND>
 <L>132<pc>11
@@ -8695,6 +8695,7 @@ pataNgaH SalaBaH kzudrA saraGA maDumakzikA .. 1213 ..
 <eid>3077<syns>mAkzika-klI,maDu-klI
 <eid>3078<syns>maDUcCizwa-klI,sikTaka-klI
 mAkzikAdi maDu kzOdraM maDUcCizwaM tu sikTakam .
+<LEND>
 <L>1526<pc>47
 <eid>3079<syns>varvaRA-strI
 <eid>3080<syns>puttikA-strI,pataNgikA-strI
