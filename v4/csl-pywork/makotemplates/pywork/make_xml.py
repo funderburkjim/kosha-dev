@@ -133,6 +133,19 @@ kaRwakaM romaharze syAt sUcyagre kzudravEriRi .. 3 ..
  # data = close_divs(data)
  return data
 
+def construct_xmlstring_2_helper(syns):
+ # syns = a,b,c ...
+ # each syn is either k1 or k1-gender
+ # return list of k1s.
+ parts = syns.split(',')
+ synk1s = []
+ for part in parts:
+  # part is either x-y or x
+  subparts = part.split('-')
+  k1 = subparts[0]
+  synk1s.append(k1)
+ return synk1s
+
 def construct_xmlstring_2(datalines,hwrec):
  # for koshas like abch
  dbg = False
@@ -181,14 +194,17 @@ mAkzikAdi maDu kzOdraM maDUcCizwaM tu sikTakam .
   if m == None:  # error condition
    y = '<!-- ERROR wrong form: %s -->' %x
    hwdetails1.append(y)
-  else:
-   eid = m.group(1)
-   syns = m.group(2)
-   y1 = '<eid>%s</eid>' % eid
-   y2 = '<syns><s>%s</s></syns>' % syns
-   y = '%s%s' % (y1,y2)
-   z = '<hwdetail>%s</hwdetail>' % y
-   hwdetails1.append(z)
+   continue
+  eid = m.group(1)
+  syns = m.group(2)
+  k1 = hwrec.k1
+  if k1 not in construct_xmlstring_2_helper(syns):
+   continue
+  y1 = '<eid>%s</eid>' % eid
+  y2 = '<syns><s>%s</s></syns>' % syns
+  y = '%s%s' % (y1,y2)
+  z = '<hwdetail>%s</hwdetail>' % y
+  hwdetails1.append(z)
  # string form
  hwdetails_str = ''.join(hwdetails1)
  # construct body0, by combining hwdetails and entrydetails
@@ -282,6 +298,7 @@ def make_xml(filedig,filehw,fileout):
 %if dictlo in ['anhk']:
   xmlstring = construct_xmlstring_1(datalines,hwrec)
 %elif dictlo in ['abch']:
+  # using abch form
   xmlstring = construct_xmlstring_2(datalines,hwrec)
 %else:
   print('make_xml.py ERROR in make_xml function')
