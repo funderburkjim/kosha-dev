@@ -162,6 +162,7 @@ class DictInfo {
   "ARMH"=>"//www.sanskrit-lexicon.uni-koeln.de/scans/ARMHScan/2020/web/pdfpages" ,
   "PWKVN"=>"//www.sanskrit-lexicon.uni-koeln.de/scans/PWScan/2014/web/pdfpages" ,
   "LRV"=>"//www.sanskrit-lexicon.uni-koeln.de/scans/LRVScan/pdfpages" ,
+  "ABCH"=>"//www.sanskrit-lexicon.uni-koeln.de/scans/ABCHScan/pdfpages" ,
  );
  $url = $cologne_pdfpages_urls[$this->dictupper];
  return $url;
