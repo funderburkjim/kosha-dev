@@ -1,0 +1,934 @@
+;METADATA
+;title{Anekārthanāmamālā}
+;author{Harṣakīrti}
+;bookFullName{Harṣakīrti's Anekārthanāmamālā - A homonymic dictionary of Sanskrit}
+;bookSeriesDetails{NACHRICHTEN DER AKADEMIE DER WISSENSCHAFTEN IN GOTTINGEN I. PHILOLOGISHCH-HISTORISCHE KLASSE Nr. 6}
+;editor{Claus vogel}
+;editorQualifications{}
+;publisher{Vandenhoeck & Ruprecht in gottingen}
+;pressDetails{Hubert & Co., Gottingen}
+;publicationYear{1981 A.D.}
+;dataEntryBy{Dr. Dhaval Patel}
+;dataEntryEmail{drdhaval2785@gmail.com}
+;proofReadBy{Dr. Dhaval Patel}
+;proofReaderEmail{drdhaval2785@gmail.com}
+;annotatedBy{}
+;annotatorEmail{}
+;version{0.1.0}
+;projectDetails{This project is aimed at creating a database and related software tools to access Indian koshas, both online and offline. The project is funded by generous donation of Shree Ramkrishna Knowledge Fondation, Surat.}
+;projectWebPage{http://github.com/sanskrit-kosha/kosha}
+;emailTo{drdhaval2785@gmail.com}
+;description{}
+;shortCode{ANHK}
+;funding{Shree Ramkrishna Knowledge Foundation.}
+;licence{GNU GPL v3.0}
+;credits{1. SRKKF for funding. 2. Dr. Dhaval Patel for spending time to type in and proofread the data.}
+;dataFormatDetails{See https://github.com/sanskrit-kosha/kosha/blob/master/docs/annotation_thoughts.md for details.}
+;editorialChanges{}
+;nymic{homo}
+;pagenum{true}
+;linenum{false}
+;chapterArrangements{kanda}
+;newVerseNumbersAtChangeOf{never}
+;newLineNumbersAtChangeOf{never}
+;version0.0.1{24 January 2020}
+;version0.0.2{24 January 2020}
+;version0.0.3{24 January 2020}
+;version0.0.4{24 January 2020}
+;version0.1.0{24 January 2020}
+;version0.2.0{}
+;version0.2.1{}
+;version0.2.2{}
+;version0.3.0{}
+;version0.3.1{}
+;version0.3.2{}
+;version0.3.3{}
+;version0.3.4{}
+;version0.3.5{}
+;version0.3.6{}
+;version1.0.0{}
+;CONTENT
+;p{0140}
+;k{कान्ताः}
+<L>1<pc>140
+<k1>ka-puM<meanings>sUrya,veDas
+<k1>ka-klI<meanings>suKa,mastaka,jala
+<k1>Sloka-puM<meanings>anuzwuB,yaSas
+<k1>loka-puM<meanings>Buvana,jana
+sUrye veDasi vAyO kaH kaM suKe mastake jale .
+anuzwubyaSasoH Sloko lokastu Buvane jane .. 1 ..
+<LEND>
+<L>2<pc>140
+<k1>aNka-puM<meanings>utsaNga,cihna
+<k1>kalaNka-puM<meanings>aNka,apavAda
+<k1>kOSika-puM<meanings>indra,GUka
+<k1>pfTuka-puM<meanings>cipiwa,arBaka
+utsaNgacihnayoraNkaH kalaNko'NkApavAdayoH .
+indre GUke kOSikaH syAt pfTukO cipiwArBakO .. 2 ..
+<LEND>
+<L>3<pc>140
+<k1>kawaka-klI<meanings>kaRWaka,sEnya,parvatanitamba
+<k1>kaRwaka-klI<meanings>romaharza,sUcyagra,kzudravErin
+kawakaM kaRWake sEnye nitambe parvatasya ca .
+kaRwakaM romaharze syAt sUcyagre kzudravEriRi .. 3 ..
+<LEND>
+<L>4<pc>140
+<k1>jEvAtfka-puM<meanings>candramas,dIrGAyuz
+<k1>kizku-puM<meanings>vitasti,hasta
+<k1>paNka-puM<meanings>kardama,pApa
+jEvAtfkaScandramasi taTA dIrGAyuzi smftaH .
+kizkurhaste vitastO ca paNkaH kardamapApayoH .. 4 ..
+<LEND>
+;c{॥ कान्ताः ॥}
+;k{खान्ताः}
+<L>5<pc>140
+<k1>Ka-klI<meanings>indriya-klI,AkASa-klI
+<k1>SilImuKa-puM<meanings>ali-puM,bARa-puM
+<k1>SaNKa-puM<meanings>niDi,kambu-klI,BAlaSravAntarAsTan
+KamindriyaM KamAkASamalibARO SilImuKO .
+SaNKo niDO kambuni ca BAlaSravo'ntare'sTani .. 5 ..
+<LEND>
+;c{॥ खान्ताः ॥}
+;k{गान्ताः}
+<L>6<pc>140
+<k1>nAga-puM<meanings>sarpa,gaja,SIrza
+<k1>aga-puM<meanings>vfkza,parvata
+<k1>Baga-puM<meanings>jYAna,ravi,yoni,samagrESvarya,vIrya,rUpa,prayatna,Darma,icCA,yaSas,vErAgya,mukti
+<k1>ASuga-puM<meanings>vAyu,bARa
+<k1>Kaga-puM<meanings>Sara,arka,vihaga
+nAgaH sarpe gaje SIrze ago vfkze ca parvate .
+Bago jYAne ravO yonO samagrESvaryavIryayoH .. 6 ..
+rupaprayatnaDarmecCAyaSovErAgyamuktizu .
+ASugO vAyubARO ca SarArkavihagAH KagAH .. 7 ..
+<LEND>
+<L>7<pc>140
+<k1>pataNga-puM<meanings>pakzin,sUrya
+<k1>pUga-puM<meanings>kramuka,vfnda
+<k1>sAraNga-puM<meanings>cAtaka,BfNga,kuYjara,hariRa
+pataNgO pakzisUryO ca pUgaH kramukavfndayoH .
+sAraNgaScAtake BfNge kuYjare hariRe'pi ca .. 8 ..
+<LEND>
+<L>8<pc>140
+<k1>Boga-puM<meanings>suKa,sarpakAya,PaRA-strI,gaRikABfti
+<k1>yuga-puM<meanings>SakawANga
+<k1>yuga-klI<meanings>yugma,kftAdi
+BogaH suKe sarpakAye PaRAyAM gaRikABftO .
+SakawANge yugaH prokto yugaM yugme kftAdizu .. 9 ..
+<LEND>
+<L>9<pc>140
+<k1>varANga-klI<meanings>mastaka,yoni
+<k1>liNga-klI<meanings>cihna,SiSna
+<k1>mfga-puM<meanings>paSu
+varANgaM mastake yonO liNgaM syAccihnaSiSnayoH .
+puMstrInapuMsakaM liNgaM paSavo'pi mfgAH smftAH .. 10 ..
+<LEND>
+;c{॥ गान्ताः ॥}
+;p{0142}
+;k{घान्ताः}
+<L>10<pc>142
+<k1>arGa-puM<meanings>pUjAviDi,mUlya
+<k1>oGa-puM<meanings>vfnda,amBoraya
+<k1>Suci<meanings>pavitra,vahni,SfNgAra,AzAQa
+arGaH pUjAviDO mUlye'pyoGo vfnde'mBasAM raye .
+;c{॥ घान्ताः ॥}
+;k{चान्ताः}
+SuciH pavitre vahnO ca SfNgArAzAQayorapi .. 11 ..
+<LEND>
+<L>11<pc>142
+<k1>ruci<meanings>spfhA-strI,kiraRa
+<k1>kAca-puM<meanings>Sikya,dfgruj
+<k1>arcA-strI<meanings>pUjA,pratimA
+<k1>carcA-strI<meanings>lepa,vicAraRa
+ruciH spfhAyAM kiraRe kAcaH Sikye dfSo ruji .
+arcA pUjApratimayoScarcA lepe vicAraRe .. 12 ..
+<LEND>
+;c{॥ चान्ताः ॥}
+;k{जान्ताः}
+<L>12<pc>142
+<k1>aja-puM<meanings>vizRu,viDi,CAga,trivArzikavrIhi
+<k1>dvija-puM<meanings>vipra,aRqaja,danta
+<k1>jalaja-klI<meanings>padma,SaNKa
+ajo vizRO viDO CAge taTA vrIhO trivArzike .
+dvijo vipre'Rqaje dante jalajaM padmaSaNKayoH .. 13 ..
+<LEND>
+<L>13<pc>142
+<k1>prajA-strI<meanings>santati,loka
+<k1>vraja-puM<meanings>gozWa,nivaha
+<k1>Dvaja-puM<meanings>cihna,patAkA-strI,SORqika,mehana
+prajA tu saMtatO loke gozWe ca nivahe vrajaH .
+DvajaScihne patAkAyAM SORqike mehane'pi ca .. 14 ..
+<LEND>
+;c{॥ जान्ताः ॥}
+;k{ञान्ताः}
+<L>14<pc>142
+<k1>dozajYa-puM<meanings>vEdya,vidvas
+<k1>kzetrajYa-puM<meanings>
+<k1>saMjYA-puM<meanings>cetanA-strI,arTasUcanA-strI
+dozajYO vEdyavidvAMsO kzetrajYO ----- .
+saMjYA tu cetanA hastanetrAdyEScArTasUcanA .. 15 ..
+<LEND>
+;c{॥ ञान्ताः ॥}
+;k{टान्ताः}
+<L>15<pc>142
+<k1>arizwa-puM<meanings>kAka,nimba,Gola,upadrava,Penila
+<k1>arizwa-klI<meanings>sUtakAgfha
+kAke nimbe'pyarizwaH syAdGole cEvApyupadrave .
+Penile ca tasya Pale arizwaM sUtakAgfhe .. 16 ..
+<LEND>
+<L>16<pc>142
+<k1>kUwa-klI<meanings>anfta,SElaSfNga,kapawa,pASa
+<k1>truwi<meanings>sUkzmElA-strI,alpakAla,saMSaya
+anfte SElaSfNge ca kUwaM kapawapASayoH .
+sUkzmElAyAM alpakAle truwiH syAt saMSaye'pi ca .. 17 ..
+<LEND>
+<L>17<pc>142
+<k1>kowi<meanings>atyutkarza,saMKyA-strI,agraBAgaka
+<k1>jawA-strI<meanings>lagnakaca,mUla
+<k1>pawu<meanings>dakza,amanda,agada
+atyutkarze ca saMKyAyAM kowiH syAdagraBAgake .
+jawA lagnakace mUle dakze'mande'gade pawuH .. 18 ..
+<LEND>
+;c{॥ टान्ताः ॥}
+;p{0144}
+;k{ठान्ताः}
+<L>18<pc>144
+<k1>nIlakaRWa-puM<meanings>Siva-puM,barhin
+<k1>kAzWA-strI<meanings>utkarza,sTiti,diS
+<k1>nizWA-strI<meanings>nASa,nirvAha,utkarza,vrata
+nIlakaRWaH Sivo barhI kAzWotkarze sTitO diSi .
+nizWA nASe ca nirvAhe taTotkarze vrate'pi ca .. 19 ..
+<LEND>
+;c{॥ ठान्ताः ॥}
+;k{डान्ताः}
+<L>19<pc>144
+<k1>kARqa-puM<meanings>nIra,aDama,drumaskanDa,avasara,bARa
+<k1>BARqa-klI<meanings>kfpARaka,BAjana,mUlavaRigDana
+nIre'Dame drumaskanDe kARqo'vasarabARayoH .
+kfpARake BAjane ca BARqaM mUlavaRigDane .. 20 ..
+<LEND>
+;c{॥ डान्ताः ॥}
+;k{णान्ताः}
+<L>20<pc>144
+<k1>mArgaRa-puM<meanings>yAcaka,bARa
+<k1>gaRa-puM<meanings>gacCa,samUha
+<k1>varRa-puM<meanings>dvijAdi,vistAra,stuti
+<k1>varRa-klI<meanings>akzara
+mArgaRo yAcake bARe gaRo gacCasamUhayoH .
+varRo dvijAdO vistAre stutO varRaM tu cAkzare .. 21 ..
+<LEND>
+<L>21<pc>144
+<k1>guRa-puM<meanings>sattvAdi,rUpAdi,DanurjyA-strI,pratyaNga,rajju,tantu
+guRAH sattvAdayo jYeyA guRA rUpAdayastaTA .
+DanurjyAyAM guRo jYeyaH pratyaNgarajjutantuzu .. 22 ..
+<LEND>
+<L>22<pc>144
+<k1>karaRa-klI<meanings>sADakatama,gAtra,indriya
+<k1>pramARa-klI<meanings>satya,maryAdA,SAstra,iyattA,pramAtf
+karaRaM sADakatamaM bavAdi gAtramindriyam .
+pramARaM satyamaryAdASAstreyattApramAtfzu .. 23 ..
+<LEND>
+<L>23<pc>144
+<k1>SaraRa-klI<meanings>gfha,rakzitf
+<k1>vAruRI-strI<meanings>paScimA-strI,surA-strI
+<k1>kzaRa-puM<meanings>utsava,sUkzmakAla,prastAva
+SaraRaM gfharakzitrorvAruRI paScimA surA .
+utsave sUkzmakAle ca prastAve ca kzaRaH smftaH .. 24 ..
+<LEND>
+<L>24<pc>144
+<k1>aruRa-puM<meanings>raktavarRa,BAskarasAraTi
+<k1>hariRa-puM<meanings>mfga,Davala,dyUta,mUlya,Dana
+aruRo raktavarRe syAdBAskarasAraTAvapi .
+hariRo mfge ca Davale dyUte mUlye Dane punaH .. 25 ..
+<LEND>
+<L>25<pc>144
+<k1>vizARa-klI<meanings>paSuSfNga,hastidanta
+<k1>tfzRA-strI<meanings>spfhA,pipAsA
+<k1>GfRA-strI<meanings>dayA,jugupsA
+paSuSfNge hastidante vizARaM parikIrtitam .
+tfzRA spfhA pipAsA ca GfRA dayAjugupsayoH .. 26 ..
+<LEND>
+<L>26<pc>144
+<k1>jizRu-puM<meanings>Sakra,arjuna,vizRu,jitvara
+<k1>veRI-strI<meanings>keSabanDa,nadIvega,haraRa
+jizRuH Sakre'rjune vizRO jitvare'pi ca kIrtitaH .
+keSabanDe nadIvege veRI syAdDaraRe'pi ca .. 27 ..
+<LEND>
+<L>27<pc>144
+<k1>tIkzRa-klI<meanings>tikta,viza,loha
+<k1>maRi<meanings>meQrAgra,ratna
+<k1>kzattf-puM<meanings>dvAHsTa,raTADyakza,SUdraja
+tIkzRaM tikte vize lohe maRirmeQrAgraratnayoH .
+;c{॥ णान्ताः ॥}
+;k{तान्ताः}
+kzattA dvAHsTe raTADyakze kzatriyAyAM ca SUdraje .. 28 ..
+<LEND>
+<L>28<pc>144
+<k1>yantf-puM<meanings>hastipaka,sUta
+<k1>maruta-puM<meanings>pavana,amara
+<k1>kftAnta-puM<meanings>yama,sidDAnta
+<k1>mUrti<meanings>kAWinya,kAya
+yantA hastipake sUte marutO pavanAmarO .
+kftAntO yamasidDAntO mUrtiH kAWinyakAyayoH .. 29 ..
+<LEND>
+<L>29<pc>144
+<k1>jAti<meanings>gotra,sAmAnya
+<k1>BUti<meanings>Basman,saMpad
+<k1>heti<meanings>ravyarcis,Sastra,vahnijvAlA
+jAtirgotre ca sAmAnye BUtirBasmani saMpadi .
+raverarciSca SastraM ca vahnijvAlA ca hetayaH .. 30 ..
+<LEND>
+;p{0146}
+<L>30<pc>146
+<k1>Sruti<meanings>veda,karRa
+<k1>kziti<meanings>sTAna,BU,kzaya
+<k1>kAnti<meanings>SoBA,aBilAza
+<k1>SAnti<meanings>Sama,arhat
+Srutirvede ca karRe ca kzitiH sTAne Buvi kzaye .
+kAntiH SoBABilAzaSca SAntirBadre Same'rhati .. 31 ..
+<LEND>
+<L>31<pc>146
+<k1>sita-puM<meanings>badDa,graha,varRa
+<k1>nata-puM<meanings>tagara,namra
+<k1>vftta-klI<meanings>padya,caritra,saMjAta,vartula,dfQa
+sito badDe grahe varRe natastagaranamrayoH .
+vfttaM padye caritre ca saMjAte vartule dfQe .. 32 ..
+<LEND>
+<L>32<pc>146
+<k1>rati<meanings>smarastrI-puM,rAga,saMBoga,tfti
+<k1>prIti<meanings>yogAntara,preman,smarapatnI-strI,pramoda
+ratiH smarastriyAM rAge saMBoge ca tftAvapi .
+prItiryogAntare premRi smarapatnIpramodayoH .. 33 ..
+<LEND>
+<L>33<pc>146
+<k1>ketu-puM<meanings>grahaBeda,Dvaja,cihna,dyuti
+<k1>pota-puM<meanings>yAnapAtra,SiSu
+<k1>pratIta-puM<meanings>KyAta,hfzwa
+grahaBede Dvaje ketuScihne sUryadyutAvapi .
+yAnapAtre SiSO potaH pratItaH KyAtahfzwayoH .. 34 ..
+<LEND>
+<L>34<pc>146
+<k1>sUta-puM<meanings>pArada,sAraTi
+<k1>vyakta-puM<meanings>sPuwa,manIzin
+<k1>vasati-puM<meanings>gfha,rAtri
+<k1>BfBft-puM<meanings>SEla,rAjan
+sUtaH pAradasAraTyorvyaktaH sPuwamanIziRoH .
+gfhe rAtrO ca vasatirBUBfcCEle ca rAjani .. 35 ..
+<LEND>
+<L>35<pc>146
+<k1>ftu<meanings>himAdi,strIpuzpa
+<k1>vitta-klI<meanings>dravya,vicAraRa
+<k1>sItA-strI<meanings>KyAta,mETilI-strI,halapadDati
+fturhimAdO strIpuzpe vittaM dravye vicAraRe .
+KyAte'pi sItA vijYeyA mETilyAM halapadDatO .. 36 ..
+<LEND>
+<L>36<pc>146
+<k1>kalaDOta-klI<meanings>rUpya,heman
+<k1>DAtu<meanings>BvAdi,rasAdi,suvarRAdi,mfdBeda
+<k1>kAnta-puM<meanings>ramya,Dava
+kalaDOtaM rUpyahemnorDAturBvAdO rasAdizu .
+suvarRAdO mfdBede'pi kAnto ramye Dave'pi ca .. 37 ..
+<LEND>
+<L>37<pc>146
+<k1>amfta-klI<meanings>yajYaSeza,pIyUza,SEla,Gfta,ayAcita,mokza
+<k1>amftA-strI<meanings>paTyA,guqucI
+amftaM yajYaSeze syAt pIyUze SEle Gfte .
+ayAcite ca mokze cAmftA paTyA guqucyapi .. 38 ..
+<LEND>
+<L>38<pc>146
+<k1>avyakta-klI<meanings>praDAna,aSabda,prakfti,mahat
+<k1>arTa-puM<meanings>aBiDeya,dravya,padArTa,prayojana
+avyaktaM ca praDAnaM cASabdaSca prakftirmahAn .
+;c{॥ तान्ताः ॥}
+;k{थान्ताः}
+arTo'BiDeye dravye ca padArTe ca prayojane .. 39 ..
+<LEND>
+;p{0148}
+<L>39<pc>148
+<k1>tIrTa-puM<meanings>caturviDasaMGa,puRyakzetra,avatAra
+<k1>granTi<meanings>vastrAdibanDa,rugBeda,kOwilya,parvan
+tIrTaScaturviDe saMGe puRyakzetrAvatArayoH .
+granTirvastrAdibanDe rugBede kOwilyaparvaRoH .. 40 ..
+<LEND>
+<L>40<pc>148
+<k1>prasTa-klI<meanings>sAnu,mAnaBeda
+<k1>vITI-strI<meanings>paNkti,vartman
+<k1>Canda-puM<meanings>aBiprAya,vaSa
+<k1>Amoda-puM<meanings>ganDa,harza
+prasTaM sAnO mAnaBede vITI paNktO ca vartmani .
+;c{॥ थान्ताः ॥}
+;k{दान्ताः}
+Cando'BiprAyavaSayorAmodo ganDaharzayoH .. 41 ..
+<LEND>
+<L>41<pc>148
+<k1>Cada-puM<meanings>parRa,garut
+<k1>abda-puM<meanings>vatsara,meGa
+<k1>kakud<meanings>SrezWa,vfzaskanDa,rAjacihna,mahIpati
+CadaH parRe garuti syAdabdo vatsarameGayoH .
+kakucCrezWe vfzaskanDe rAjacihne mahIpatO .. 42 ..
+<LEND>
+<L>42<pc>148
+<k1>manda-puM<meanings>mUrKa,Sani,rogin,alasa,BAgavarjita
+<k1>pada-klI<meanings>sTAna,viBaktyanta,caraRanyAsa,pAda
+mando mUrKe SanO rogiRyalase BAgavarjite .
+padaM sTAne viBaktyante caraRanyAsapAdayoH .. 43 ..
+<LEND>
+<L>43<pc>148
+<k1>pAda-puM<meanings>mUla,caturTAMSa,aMhri,paryantaparvata
+<k1>Beda-puM<meanings>vidAraRa,dvEDa,upajApa,viSeza
+pAdo mUle caturTAMSe cAMhrO paryantaparvate .
+Bedo vidAraRe dvEDa upajApaviSezayoH .. 44 ..
+<LEND>
+<L>44<pc>148
+<k1>mada-puM<meanings>madya,ahaMkAra
+<k1>dvaMdva-klI<meanings>samara,yugma
+<k1>upanizad-strI<meanings>SudDaDarma,vedatattva,rahas
+mado madye'pyahaMkAre dvaMdvaM samarayugmayoH .
+upanizacCudDaDarme vedatattve rahasyapi .. 45 ..
+<LEND>
+<L>45<pc>148
+<k1>mAkanda-puM<meanings>sahakAra
+<k1>mAkandI-strI<meanings>AmalakIPala
+<k1>maDu-klI<meanings>madya,kzOdra,puzparasa
+mAkandaH sahakAre syAnmAkandyAmalakIPale .
+;c{॥ दान्ताः ॥}
+;k{धान्ताः}
+maDu madye maDu kzOdre maDu puzparase'pi ca .. 46 ..
+<LEND>
+<L>46<pc>148
+<k1>maDu-puM<meanings>cEtra,dEtya
+<k1>viDu-puM<meanings>candra,acyuta
+<k1>sidDi<meanings>nizpatti,mukti
+<k1>sidDa-puM<meanings>nizpanna,mukta,devaviSeza
+<k1>sADu-puM<meanings>sajjana,ramya
+<k1>vaDU-strI<meanings>putrapatnI-strI
+<k1>buDa-puM<meanings>vidvat,cAndrin,sUra
+maDuScEtraSca dEtyaSca viDuScandre taTAcyute .
+sidDirnizpattimuktyoH syAt sidDo nizpannamuktayoH .. 47 ..
+sidDo devaviSeze ca sADuH sajjanaramyayoH .
+vaDUH striyAM putrapatnyAM vidvaccAndrisUrA buDAH .. 48 ..
+<LEND>
+<L>47<pc>148
+<k1>boDi<meanings>bOdDasamADi,arhadDarmApti,pippala,kartavya,arTopadeSa
+<k1>viDi<meanings>dEva,veDas
+boDirbOdDasamADO cArhadDarmAptO ca pippale .
+kartavyArTopadeSe tu viDirdEve ca veDasi .. 49 ..
+<LEND>
+<L>48<pc>148
+<k1>SradDA-strI<meanings>Astikya,aBilAza
+<k1>mugDa-puM<meanings>sundara,mUQa
+<k1>skanDa-puM<meanings>prakARqa,aMsa,vijYAnAdi,samUha,sEnyaBAga
+<k1>budDa-puM<meanings>sOmya,vipaScit
+<k1>suDA-strI<meanings>cUrRa,izwikAlepa,snuhI-strI,amfta
+SradDAstikye'BilAze ca mugDaH sundaramUQayoH .
+skanDaH prakARqe cAMse ca vijYAnAdizu paYcasu .. 50 ..
+;p{0150}
+samUhe sEnyaBAge ca budDaH sOmyavipaScitoH .
+suDA cUrRezwikAlepe snuhyAM cApyamfte'pi ca .. 51 ..
+<LEND>
+;c{॥ धान्ताः ॥}
+;k{नान्ताः}
+<L>49<pc>150
+<k1>vana-klI<meanings>jala,kAnana
+<k1>Buvana-klI<meanings>vizwapa,jala
+<k1>ina-puM<meanings>svAmin,sUrya
+<k1>jina-puM<meanings>arhat,budDa,vizRu
+vanaM jale kAnane syAdBuvanaM vizwape jale .
+inaH svAmini sUrye ca jino'rhadbudDavizRuzu .. 52 ..
+<LEND>
+<L>50<pc>150
+<k1>Gana-puM<meanings>meGa,dfQa,sAndra,vAdyaBeda,mudgara
+<k1>dAna-klI<meanings>gajamada,tyAga
+<k1>DAman<meanings>tejas,mandira
+Gano meGe dfQe sAndre vAdyaBede ca mudgare .
+dAnaM gajamade tyAge DAma tejasi mandire .. 53 ..
+<LEND>
+<L>51<pc>150
+<k1>ratna-klI<meanings>jAtiSrezWa,maRi
+<k1>rAjan-puM<meanings>candra,mahIpati
+<k1>brahman<meanings>veda-puM,jYAna-klI,tapas
+<k1>brahman-puM<meanings>vipra,veDas
+jAtiSrezWe maRO ratnaM rAjA candre mahIpatO .
+vedo jYAnaM tapo brahma brahmA vipre ca veDasi .. 54 ..
+<LEND>
+<L>52<pc>150
+<k1>citraBAnu-puM<meanings>sUrya,vahni
+<k1>BAnu-puM<meanings>sUrya,mayUKa
+<k1>SiKin<meanings>vahni,mayUra
+<k1>pattrin<meanings>Sara,pakzin
+citraBAnU sUryavahnI BAnuH sUryamayUKayoH .
+SiKI vahnO mayUre ca pattriRO SarapakziRO .. 55 ..
+<LEND>
+<L>53<pc>150
+<k1>ArADana-klI<meanings>sADana,sevA-strI,tozaRa
+<k1>praDAna-klI<meanings>prakfti,SrezWa
+<k1>vitAna-klI<meanings>kadaka,kratu
+ArADanaM sADane syAt sevAyAM tozaRe'pi ca .
+praDAnaM prakftO SrezWe vitAnaM kadake kratO .. 56 ..
+<LEND>
+<L>54<pc>150
+<k1>lalAman<meanings>tilaka,ramya,praDAna,SIrzadAman
+<k1>varDana-klI<meanings>Cedana,vfdDi
+<k1>rasanA-strI<meanings>kAYcI-strI,jihvA-strI
+lalAma tilake ramye praDAne SIrzadAmani .
+varDanaM Cedane vfdDO rasanA kAYcIjihvayoH .. 57 ..
+<LEND>
+;c{॥ नान्ताः ॥}
+;k{पान्तौ}
+<L>55<pc>150
+<k1>kalApa-puM<meanings>barha,tURIra,samUha,rasanA-strI
+<k1>vfzAkapi-puM<meanings>hara,vizRu,vahni
+kalApo barhatURIrasamUharasanAsu ca .
+hare vizRO ca vahnO ca vfkzAkapiriti smftaH .. 58 ..
+<LEND>
+;c{॥ पान्तौ ॥}
+;k{फान्तौ}
+<L>56<pc>150
+<k1>rePa-puM<meanings>varRa,kutsita
+<k1>SaPa-puM<meanings>kanda,kzura
+<k1>ganDarba-puM<meanings>aSva,gAyana
+<k1>dvijihba-puM<meanings>sarpa,durjana
+rePo varRe kutsite syAcCaPaH kande kzure'pi ca .
+;c{॥ फान्तौ ॥}
+;k{बान्तौ}
+ganDarbo'Sve gAyane ca dvijihbO sarpadurjanO .. 59 ..
+<LEND>
+;c{॥ बान्तौ ॥}
+;k{भान्ताः}
+<L>57<pc>150
+<k1>dunduBi-puM<meanings>BerI-strI
+<k1>dunduBi-strI<meanings>akzabindu
+<k1>kumBa-puM<meanings>Gawa,hastimUrDan
+<k1>garBa-puM<meanings>BrURa,udara
+puMlliNge dunduBirBeryAmakzabindO striyAM punaH .
+kumBo Gawe hastimUrDni garBo BrURe taTodare .. 60 ..
+<LEND>
+;c{॥ भान्ताः ॥}
+;k{मान्ताः}
+<L>58<pc>150
+<k1>kAma-puM<meanings>smara,aBilAza
+<k1>plavaMgama-puM<meanings>kapi,Beka
+<k1>nigama-puM<meanings>mArga,veda
+<k1>rAma-puM<meanings>SyAma,manorama
+kAmaH smare'BilAze ca kapO Beke plavaMgamaH .
+mArge vede ca nigamo rAmaH SyAme manorame .. 61 ..
+<LEND>
+<L>59<pc>150
+<k1>Darma-puM<meanings>puRya,svaBAva
+<k1>stoma-puM<meanings>yajYa,samUha
+<k1>grAma-puM<meanings>nivAsa,vfnda
+<k1>jihma-puM<meanings>kuwila,alasa
+DarmaH puRye svaBAve ca stomo yajYasamUhayoH .
+grAmo nivAse vfnde'pi jihmastu kuwile'lase .. 62 ..
+<LEND>
+;p{0152}
+<L>60<pc>152
+<k1>lalAma-klI<meanings>pucCa,puRqra,aSvaBUzA,praDAna,ketu
+<k1>kzamA-strI<meanings>pfTvI-strI,titikzA-strI
+<k1>vAma-puM<meanings>vakra,manorama
+lalAmaM pucCapuRqrASvaBUzApraDAnaketuzu .
+kzamA pfTvyAM titikzAyAM vAmo vakre manorame .. 63 ..
+<LEND>
+;c{॥ मान्ताः ॥}
+;k{यान्ताः}
+<L>61<pc>152
+<k1>kzaya-puM<meanings>gfha,vinASa
+<k1>BrAtfvya-puM<meanings>BrAtfja,dviz
+<k1>arya-puM<meanings>svAmin,vESya
+<k1>manyu-puM<meanings>kroDa,kratu
+kzayo gfhe vinASe ca BrAtfvyO BrAtfjadvizO .
+aryaH svAmini vESye ca manyuH kroDe kratAvapi .. 64 ..
+<LEND>
+<L>62<pc>152
+<k1>pratyaya-puM<meanings>jYAna,viSvAsa,hetu,sanAdika
+<k1>DizRya-klI<meanings>gfha,nakzatra
+<k1>tArkzya-puM<meanings>garuqa,vAjin
+pratyayo jYAnaviSvAsahetusanAdikezvapi .
+DizRyaM gfhe ca nakzatre tArkzyO garuqavAjinO .. 65 ..
+<LEND>
+<L>63<pc>152
+<k1>cEtya-klI<meanings>jinOkas,jinabimba,SrezWavfkza,vana
+<k1>samaya-puM<meanings>kAla,sidDAnta,saMketa
+cEtyaM jinOkastadbimbaSrezWavfkzavanezu ca .
+samayaH kAlasidDAntasaMketezu buDEH smftaH .. 66 ..
+<LEND>
+<L>64<pc>152
+<k1>vizaya-puM<meanings>indriyArTa,deSa,grAma,gocara
+<k1>CAyA-strI<meanings>ravistrI-strI,SoBA-strI,pratibimba-klI,anAtapa-puM
+vizayA indriyArTezu deSe grAme ca gocare .
+CAyA ravistrI SoBA ca pratibimbamanAtapaH .. 67 ..
+<LEND>
+<L>65<pc>152
+<k1>kakzyA-strI<meanings>prakozWa,kAYcI-strI,iBabanDana
+<k1>guhya-klI<meanings>rahasya,upasTa
+<k1>praRaya-puM<meanings>sneha,yAcYA-strI
+kakzyA prakozWe harmyAdeH kAYcyAM maDyeBabanDane .
+rahasyopasTayorguhyaM praRayaH snehayAcYayoH .. 68 ..
+<LEND>
+<L>66<pc>152
+<k1>dravya-klI<meanings>guRASraya,vitta
+<k1>parjanya-puM<meanings>Sakra,meGa
+<k1>vfzAkapAyI-strI<meanings>SrI,gOrI
+<k1>kalya-puM<meanings>sajja,nirAmaya
+dravyaM guRASraye vitte parjanyaH SakrameGayoH .
+vfzAkapAyI SrIgOryoH kalyO sajjanirAmayO .. 69 ..
+<LEND>
+;c{॥ यान्ताः ॥}
+;k{रान्ताः}
+<L>67<pc>152
+<k1>payoDara-puM<meanings>kuca,meGa
+<k1>dvApara-puM<meanings>saMSaya,yuga
+<k1>pAra-puM<meanings>paratawa,prAnta
+<k1>BUri-puM<meanings>bahu,suvarRa
+payoDaraH kuce meGe dvAparaH saMSaye yuge .
+pAraH paratawe prAnte BUrirbahusuvarRayoH .. 70 ..
+<LEND>
+<L>68<pc>152
+<k1>kara-puM<meanings>hasta,aMbu,bali
+<k1>karIra-puM<meanings>kalasa,taru
+<k1>ambara-klI<meanings>vyoman,vastra-klI
+<k1>kzIra-klI<meanings>dugDa,jala
+karo hastAMbubalizu karIraH kalase tarO .
+ambaraM vyoma vastraM ca kzIraM dugDe jale'pi ca .. 71 ..
+<LEND>
+<L>69<pc>152
+<k1>puzkara-klI<meanings>hastiSuRqAgra,padma,KaqgaPala,jala,vAdyaBARqamuKa,vyoman,tIrTaviSeza,ozaDiviSeza
+puzkaraM hastiSuRqAgre padme KaqgaPale jale .
+vAdyaBARqamuKe vyomni tIrTOzaDiviSezayoH .. 72 ..
+<LEND>
+<L>70<pc>152
+<k1>hari-puM<meanings>sUrya,candra,yama,vizRu,vAsava,dardura,haya,mfgendra,vAnara,vAyu
+sUrye candre yame vizRO vAsave dardure haye .
+mfgendre vAnare vAyO daSasvapi hariH smftaH .. 73 ..
+<LEND>
+<L>71<pc>152
+<k1>sAra-puM<meanings>SrezWa,bala
+<k1>rE-puM<meanings>vitta,svarRa,dravya
+<k1>saMgara-puM<meanings>pratijYA-strI,saMgrAma
+sAraH SrezWe bale vitte svarRe dravye ca rAH smftaH .
+pratijYAyAM ca saMgrAme saMgaraH parikIrtitaH .. 74 ..
+<LEND>
+;p{0154}
+<L>72<pc>154
+<k1>antara-klI<meanings>maDya,Cidra,viSeza,vyavaDAna,bahiryuj,antarIya,nivasana
+maDye Cidre viSeze ca vyavaDAne bahiryuji .
+antarIye nivasane zawsu tvarTezu cAntaram .. 75 ..
+<LEND>
+<L>73<pc>154
+<k1>SiKara-klI<meanings>SElAgra,vfkzAgra,kakzA,pulaka,kowi,pakvadAqimabIjABamARikyaSakala
+SiKaraM SElavfkzAgre kakzApulakakowizu .
+pakvadAqimabIjABamARikyaSakale'pi ca .. 76 ..
+<LEND>
+<L>74<pc>154
+<k1>vihAra-puM<meanings>deSagamana,krIqA-strI,jinasadman
+<k1>pAwIra-puM<meanings>candana,vaNga,karpUra,aguru-klI
+vihAro deSagamane krIqAyAM jinasadmani .
+pAwIraScandane vaNge karpUre'guruRi smftaH .. 77 ..
+<LEND>
+<L>75<pc>154
+<k1>DAtrI-strI<meanings>upamAtA,kziti,AmalakItaru
+<k1>citra-klI<meanings>Alekya,AScarya
+<k1>kzetra-klI<meanings>patnI,SarIra
+DAtrI tu syAdupamAtA kzitirAmalakItaruH .
+AleKyAScaryayoScitraM kzetraM patnISarIrayoH .. 78 ..
+<LEND>
+<L>76<pc>154
+<k1>pAtra-klI<meanings>yogya,BAjana
+<k1>pattra-klI<meanings>vAhana,vAja
+<k1>mitra-klI<meanings>saKan
+<k1>mitra-puM<meanings>ravi
+<k1>kalatra-klI<meanings>SroRi,BAryA-strI
+yogyaBAjanayoH pAtraM pattraM vAhanavAjayoH .
+mitraM saKA ravirmitraH kalatraM SroRiBAryayoH .. 79 ..
+<LEND>
+<L>77<pc>154
+<k1>candra-puM<meanings>karpUra,svarRa
+<k1>sUtra-klI<meanings>tantu,vyavasTA-strI
+<k1>tantra-klI<meanings>svarAzwracintA-strI,sidDAnta,paricCada
+karpUrasvarRayoScandraH sUtraM tantuvyavasTayoH .
+tantraM svarAzwracintAyAM sidDAnte ca paricCade .. 80 ..
+<LEND>
+<L>78<pc>154
+<k1>sattra-klI<meanings>AcCAdana,yajYa,sadAdAna,Dana
+<k1>Sukra-klI<meanings>retas
+<k1>Sukra-puM<meanings>jyezWa,BArgava,vahni
+sattraM AcCAdane yajYe sadAdAne Dane'pi ca .
+SukraM retasi Sukrastu jyezWaBArgavavahnizu .. 81 ..
+<LEND>
+<L>79<pc>154
+<k1>narendra-puM<meanings>vizavEdya,pArTiva
+<k1>SrI-strI<meanings>vezaracanA-strI,SoBA-strI,lakzmI-strI,vizRupatnI-strI
+narendro vizavEdye'pi narendraH pArTive'pi ca .
+SrIrvezaracanA SoBA lakzmIH SrIrvizRupatnyapi .. 82 ..
+<LEND>
+;c{॥ रान्ताः ॥}
+;k{लान्ताः}
+<L>80<pc>154
+<k1>mOli<meanings>mastika,mukuwa
+<k1>kali<meanings>Aji,turyayuga
+<k1>SIla-klI<meanings>svaBAva,sadvftta
+<k1>bala-klI<meanings>sEnya,parAkrama
+mastike mukuwe mOlirAjO turyayuge kaliH .
+SIlaM svaBAve sadvftte balaM sEnye parAkrame .. 83 ..
+<LEND>
+<L>81<pc>154
+<k1>kAla-puM<meanings>kftAnta,anehas
+<k1>bali<meanings>kara,upahAra
+<k1>vyAla-puM<meanings>duzwagaja,sarpa
+<k1>SUla-klI<meanings>roga,AyuDa
+kftAntAnehasoH kAlo baliH karopahArayoH .
+vyAlo duzwagaje sarpe SUlaM roge taTAyuDe .. 84 ..
+<LEND>
+<L>82<pc>154
+<k1>pravAla-puM<meanings>vallakIdaRqa,vidruma,navapallava
+<k1>bAla-puM<meanings>mUrKa,arBaka,keSa
+<k1>kIlAla-klI<meanings>ruDira,jala
+pravAlo vallakIdaRqe vidrume navapallave .
+bAlo mUrKe'rBake keSe kIlAlaM ruDire jale .. 85 ..
+<LEND>
+;p{0156}
+<L>83<pc>156
+<k1>kamala-klI<meanings>jala,padma
+<k1>kamala-puM<meanings>kuraNga
+<k1>jAla-klI<meanings>samUha,AnAya,gavAkza,koraka
+kamalaM jale ca padme ca kuraNge kamalaH punaH .
+jAlaM samUha AnAye gavAkze korake'pi ca .. 86 ..
+<LEND>
+<L>84<pc>156
+<k1>velA-strI<meanings>abDyambuvfdDi,kAla,maryAdA-strI
+<k1>AlI-strI<meanings>saKI-strI,paNkti
+<k1>pIlu-puM<meanings>vfkza,hastin
+abDyambuvfdDO velA syAt kAlamaryAdayorapi .
+AlI saKyAM ca paNktO ca pIlurvfkze ca hastini .. 87 ..
+<LEND>
+;c{॥ लान्ताः ॥}
+;k{वान्ताः}
+<L>85<pc>156
+<k1>Druva-puM<meanings>uttAnapAdi-puM
+<k1>Druva-klI<meanings>SASvata,niScita
+<k1>sva-puM<meanings>Atman,AtmIya,jYAti
+<k1>sva-klI<meanings>Dana
+DruvastvOttAnapAdiH syAcCASvate niScite Druvam .
+sva Atmani taTAtmIye jYAtO svaM ca Dane'pi ca .. 88 ..
+<LEND>
+<L>86<pc>156
+<k1>Siva-klI<meanings>Badra-klI
+<k1>Siva-puM<meanings>SamBu-puM
+<k1>SivA-strI<meanings>gOrI-strI,SfgAlI-strI
+<k1>nIvI-strI<meanings>strIkawikAgranTi,vaRiNmUlaDana
+SivaM BadraM SivaH SamBuH SivA gOrI SfgAlyapi .
+nIvI strIkawikAgranTO vaRiNmUlaDane'pi ca .. 89 ..
+<LEND>
+<L>87<pc>156
+<k1>deva-puM<meanings>rAjan,meGa,sura
+<k1>nava-puM<meanings>navya,stuti
+<k1>Bava-puM<meanings>Siva,saMsAra,BUti,sattA,Apti,janman
+rAjYi meGe sure devo navo navye stutAvapi .
+BavaH Sive ca saMsAre BUtisattAptijanmasu .. 90 ..
+<LEND>
+<L>88<pc>156
+<k1>sattva-klI<meanings>dravya,guRa,citta,vyavasAya,svaBAva,piSAcAdi,AtmaBAva,bala,prARa,jantu
+sattvaM dravye guRe citte vyavasAyasvaBAvayoH .
+piSAcAdAvAtmaBAve bale prARezu jantuzu .. 91 ..
+<LEND>
+<L>89<pc>156
+<k1>BAva-puM<meanings>svaBAva,aBiprAya,sattA,SfNgAra,cezwita
+<k1>dAva-puM<meanings>vana,vanAgni
+<k1>prasava-puM<meanings>janman,puzpa
+BAvaH svaBAvABiprAyasattASfNgAracezwite .
+dAvo vane vanAgnO ca prasavo janmapuzpayoH .. 92 ..
+<LEND>
+<L>90<pc>156
+<k1>pfTvI-strI<meanings>BUmi,pfTu,hiNgupattrikA,kfzRAjIra
+<k1>koSa-puM<meanings>koza,KaqgapiDAna,padmagarBa,DanOkas,KagARqa,SapaTa,divya,yoni,SimbA
+<k1>viS<meanings>vESya,manuzya
+<k1>rASi<meanings>mezAdi,puYja
+pfTvI BUmO pfTO hiNgupattrikAkfzRAjIrayoH .
+;c{॥ वान्ताः ॥}
+;k{शान्ताः}
+koSaH KaqgapiDAne syAt padmagarBe DanOkasi .. 93 ..
+KagARqe SapaTe divye koSaH syAdyoniSimbayoH .
+viw tu vESyo manuzyaSca rASirmezAdipuYjayoH .. 94 ..
+<LEND>
+<L>91<pc>156
+<k1>kInASa-puM<meanings>kfpaRa,kAla,rAkzasa,karzaka
+<k1>vaMSa-puM<meanings>anvaya,maskara,gAtrapfzWa,kadambaka
+kInASaH kfpaRe kAle rAkzase karzake'pi ca .
+vaMSo'nvaye maskare ca gAtrapfzWe kadambake .. 95 ..
+<LEND>
+<L>92<pc>156
+<k1>ISa-puM<meanings>svAmin,rudra
+<k1>vaSA-strI<meanings>nArI-strI,hastin
+<k1>ASA-strI<meanings>kakuB,vAYCA-strI
+<k1>spaSa-puM<meanings>
+ISaH svAmini rudre ca vaSA nArI ca hastini .
+ASA kakuBi vAYCAyAM spaSas ------ .. 96 ..
+<LEND>
+<L>93<pc>156
+<k1>prakASa-puM<meanings>atiprasidDa
+<k1>daSA-strI<meanings>varti,vyavasTA
+<k1>Seza-puM<meanings>ananta,vasizWa
+<k1>SezA-strI<meanings>nirmAlyavastu
+prakASo'tiprasidDe syAddaSA vartivyavasTayoH .
+;c{॥ शान्ताः ॥}
+;k{षान्ताः}
+Sezo'nante vasizWe ca SezA nirmAlyavastuzu .. 97 ..
+<LEND>
+;p{0158}
+<L>94<pc>158
+<k1>koza-puM<meanings>koSa,KaqgapiDAna,padmagarBa,DanOkas,KagARqa,SapaTa,divya,yoni,SimbA
+<k1>viza-klI<meanings>hAlAhala,jala
+<k1>akza-puM<meanings>raTAvayava,pASaka,viBItaka,sOvarcala,hfzIka,hemAkza,rAkzasa
+<k1>kakzA-strI<meanings>sAmya,dormUla,aDovAsas,paScimAYcala,tfRa,vana,hastirajju
+<k1>kakza-puM<meanings>dvAraprakozWaka
+<k1>pakza-puM<meanings>sahAya,mAsArDa,varga,dehapArSvaka
+kozastu koSavajjYeyo vizaM hAlAhale jale .
+akzo raTasyAvayave pASake ca viBItake .. 98 ..
+sOvarcale hfzIke ca hemno'kze rAkzase'pi ca .
+kakzA sAmye ca dormUle'DovAsaHpaScimAYcale .. 99 ..
+tfRe vane hastirajjO kakzo dvAraprakozWake .
+pakzaH sahAye mAsArDe varge dehasya pArSvake .. 100 ..
+<LEND>
+<L>95<pc>158
+<k1>lakza-klI<meanings>vyAja,veDya
+<k1>rakzA-strI<meanings>rakzaRa,Basman
+<k1>haMsa-puM<meanings>sitacCada,sUrja,jIva,paramAtman
+lakzaM vyAje ca veDye ca rakzA rakzaRaBasmanoH .
+;c{॥ षान्ताः ॥}
+;k{सान्ताः}
+haMsaH sitacCade sUrye jIve ca paramAtmani .. 101 ..
+<LEND>
+<L>96<pc>158
+<k1>vasu-puM<meanings>agni,devaBeda
+<k1>vasu-klI<meanings>ratna,Dana
+<k1>uttaMsa-puM<meanings>karRapUra,SeKara
+<k1>avataMsa-puM<meanings>karRapUra,SeKara
+vasustvagnO devaBede vasu ratne Dane'pi ca .
+dvAvuttaMsAvataMsO ca karRapUre ca SeKare .. 102 ..
+<LEND>
+<L>97<pc>158
+<k1>prasU<meanings>mAtf,vaqabA
+<k1>dAsa-puM<meanings>DIvara,Bftya
+<k1>rasa-puM<meanings>sUta,viza,vIrya,vola,rAga,jala,SfNgArAdi,dehaDAtu,maDurAdi,drava,guRa
+<k1>viBAvasU-puM<meanings>sUryavahnI
+<k1>vyAsa-puM<meanings>muni,prapaYca
+prasUrmAtA ca vaqabA dAso DIvaraBftyayoH .
+rasaH sUte vize vIrye vole rAge jale'pi ca .. 103 ..
+SfNgArAdO dehaDAtO maDurAdO drave guRe .
+viBAvasU sUryavahnI vyAso muniprapaYcayoH .. 104 ..
+<LEND>
+<L>98<pc>158
+<k1>ojas<meanings>bala,tejas
+<k1>Candas<meanings>padya,icCA-strI,Sruti
+<k1>tapas<meanings>kfcCra,Darma
+<k1>mahas<meanings>tejas,utsava
+ojo bale tejasi ca cCandaH padyecCayoH SrutO .
+tapaH kfcCre ca Darme ca mahastejasi cotsave .. 105 ..
+<LEND>
+<L>99<pc>158
+<k1>Agas<meanings>apraDAna,pApa
+<k1>vayas<meanings>bAlyAdi,pakzin
+<k1>tamas<meanings>rAhu,guRa,pApa,DvAnta
+<k1>taras<meanings>java,bala
+Ago'praDAne pApe ca vayo bAlyAdipakziRoH .
+tamo rAhO guRe pApe DvAnte taro jave bale .. 106 ..
+<LEND>
+<L>100<pc>158
+<k1>Sreyas<meanings>Badra,Darma,praSasta
+<k1>rahas<meanings>guhya,rata,tattva
+<k1>varcas<meanings>gUTa,tejas
+Sreyo Badre ca Darme ca praSaste'pi prakIrtitam .
+raho guhye rate tattve varco gUTe ca tejasi .. 107 ..
+<LEND>
+<L>101<pc>158
+<k1>rajas<meanings>strIpuzpa,reRu
+<k1>payas<meanings>kzIra-klI,payas,ambu-klI
+<k1>vihAyas<meanings>pakzin,naBas
+<k1>sumanas<meanings>deva,puzpa
+rajaH strIpuzpareRvoSca payaH kzIraM payo'mbu ca .
+vihAyaH pakzinaBasoH sumanA devapuzpayoH .. 108 ..
+<LEND>
+;c{॥ सान्ताः ॥}
+;k{हान्ताः}
+<L>102<pc>158
+<k1>barha-puM<meanings>parRa,kalApa,parivAra,patadgraha
+<k1>maha-puM<meanings>tejas,utsava
+<k1>sneha-puM<meanings>tEla,preman
+barhaH parRe kalApe ca parivAre patadgrahe .
+mahastejasyutsave ca snehastEle ca premaRi .. 109 ..
+<LEND>
+;c{॥ हान्ताः ॥}
+;p{0160}
+;k{अव्ययानि}
+;c{अथाव्ययानि}
+<L>103<pc>160
+<k1>AN-a<meanings>IzadarTa,aBiviDi,maryAdA-strI,kriyAyuj
+<k1>A-a<meanings>pragfhya
+<k1>AH-a<meanings>saMtApa,kopa
+ANIzadarTe'BiviDO maryAdAyAM kriyAyuji .
+A pragfhyaH smftO vAkye Astu saMtApakopayoH .. 110 ..
+<LEND>
+<L>104<pc>160
+<k1>bata-a<meanings>Keda,anukampA-strI,saMtoza,vismaya,AmantraRa
+<k1>hanta-a<meanings>harzA,anukampA-strI,vAkyAramBa,vizAda
+KedAnukampAsaMtozavismayAmantraRe bata .
+hanta harze'nukampAyAM vAkyAramBavizAdayoH .. 111 ..
+<LEND>
+<L>105<pc>160
+<k1>iti-a<meanings>hetu,prakaraRasamApti,prakASAdisamApti
+<k1>api-a<meanings>saMBAvanA-strI,garhA-strI,SaNkA-strI,praSna,samuccaya
+iti hetuprakaraRaprakASAdisamAptizu .
+api saMBAvanAgarhASaNkApraSnasamuccaye .. 112 ..
+<LEND>
+<L>106<pc>160
+<k1>yAvat-a<meanings>sAkalya,avaDi,mAna,avaDAraRa
+<k1>tAvat-a<meanings>sAkalya,avaDi,mAna,avaDAraRa
+<k1>aTo-a<meanings>mANgalya,anantara,AramBa,praSna
+<k1>aTa-a<meanings>mANgalya,anantara,AramBa,praSna
+yAvat tAvacca sAkalye'vaDO mAne'vaDAraRe .
+aTo aTa dvO mANgalye'nantarAramBapraSnezu .. 113 ..
+<LEND>
+<L>107<pc>160
+<k1>alam-a<meanings>BUzaRa,paryApti,samarTa,nivAraRa
+<k1>kila-a<meanings>niScaya,alIka,vArttA-strI,saMBAvanA-strI
+alaM BUzaRaparyAptisamarTezu nivAraRe .
+kileti niScayAlIkavArttAsaMBAvanAsu ca .. 114 ..
+<LEND>
+<L>108<pc>160
+<k1>Kalu-a<meanings>nizeDa,hetu,alaMkAra,jijYAsA-strI,anunaya
+<k1>nAma-a<meanings>prakASa,saMBAvya,komalAmantraRa
+nizeDahetvalaMkArajijYAsAnunaye Kalu .
+nAma prakASasaMBAvyakomalAmantraRezu ca .. 115 ..
+<LEND>
+<L>109<pc>160
+<k1>nu-a<meanings>pfcCA-strI,vitarka
+<k1>anu-a<meanings>paScAt,sAdfSya
+<k1>nanu-a<meanings>praSna,vitarka,AmantraRa,anunaya
+nu pfcCAyAM vitarke ca paScAtsAdfSyayoranu .
+nanu praSne vitarke cAmantraRe'nunaye'pi ca .. 116 ..
+<LEND>
+<L>110<pc>160
+<k1>vA-a<meanings>upamA-strI,vikalpa
+<k1>nir-a<meanings>niScaya,nizeDa
+<k1>ku-a<meanings>IzadarTa,kutsita
+<k1>Dik-a<meanings>nirBartsana,nindA-strI
+vopamAyAM vikalpe ca nirniScayanizeDayoH .
+IzadarTe kutsite ku Dig nirBartsananindayoH .. 117 ..
+<LEND>
+<L>111<pc>160
+<k1>tiras-a<meanings>antarDi,tiryagarTa
+<k1>hA-a<meanings>vizAda,Suc,arti
+<k1>naY-a<meanings>aBAva,nizeDa,tadvirudDa,tadanya
+tiro'ntarDO tiryagarTe hA vizAdaSugartizu .
+naYaBAve nizeDe ca tadvirudDatadanyayoH .. 118 ..
+<LEND>
+<L>112<pc>160
+<k1>ahaha-a<meanings>adButa,Keda
+<k1>hi-a<meanings>hetu,niScaya
+<k1>aNga-a<meanings>saMboDana,harza
+<k1>ati-a<meanings>prakarza,atikrama
+ahahetyadBute Kede hi hetO niScaye'pi ca .
+aNga saMboDane harze prakarze'tikrame'pyati .. 119 ..
+<LEND>
+;c{नागपुरीय-तपोगण-राजाः श्री-चन्द्रकीर्ति-सूरि-वराः ।}
+;c{तच्छिष्य-हर्षकीर्ति-सुरिरनेकार्थशतमाह ॥ १२० ॥}
+

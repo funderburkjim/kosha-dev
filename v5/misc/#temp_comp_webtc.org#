@@ -1,0 +1,268 @@
+* 100 basicadjust.php
+*************************************************************
+diff for basicadjust.php
+ file1= /c/xampp/htdocs/kosha-dev/v5/csl-websanlexicon/makotemplates/web/webtc/basicadjust.php
+ file2= /c/xampp/htdocs/kosha-dev/v5/apps/abch/web/webtc/basicadjust.php
+diff /c/xampp/htdocs/kosha-dev/v5/csl-websanlexicon/makotemplates/web/webtc/basicadjust.php /c/xampp/htdocs/kosha-dev/v5/apps/abch/web/webtc/basicadjust.php
+53c53
+<   // for koshas like anhk
+---
+>   // for koshas like anhk, abch
+79,80c79,80
+<  // OLD: <hwdetail>naga-pum</hw><meaning>sarpa,gaja,sirsa</meaning><hwdetail>
+<  // NEW: <div><b>naga-pum</b> meaning(s) sarpa, gaja, sirsa</div>
+---
+>  // OLD: <hwdetail><eid>A</eid><syns>B</syns></hwdetail>
+>  // NEW: 
+82,84c82,166
+<  $meanings = $matches[2];  
+<  $meanings1 = str_replace(',', ', ',$meanings);
+<  $ans = "<div> syngroup $eid:  $meanings1</div>";
+---
+>  $synstr = $matches[2];
+>  if (! (preg_match('|^<s>(.*?)</s>$|',$synstr,$tempmatch))) {
+>   $synstr1 = str_replace(',', ', ',$synstr);
+>   $ans = "<div> syngroup $eid:  $synstr1</div>";
+>   return $ans;
+>  }
+>   #$synstr1 = str_replace(',', ', ',$synstr);
+>   #$ans = "<div> syngroup $eid:  $synstr1</div>";
+>   #return $ans;
+> 
+>  $synstr1 = $tempmatch[1];
+>  $items = preg_split('| *, *|',$synstr1);
+>  $syns = [];
+>  $html = "";
+>  $j = 0;
+>  $nitems = count($items);
+>  $i = 1;
+>  foreach($items as $item) {
+>   if ($j == 5) {
+>    $html = $html . "<br/>";
+>    $j = 0;
+>   }
+>   list($syn,$gen) = preg_split('|-|',$item);
+>   $html = $html . "<s>$syn</s>";
+>   if ($i != $nitems) {
+>    $html = $html . ", ";
+>   }
+>   $i = $i + 1;
+>   $j = $j + 1;
+>  }
+>  
+>  
+>  //$joinstr = "<span style='background-color: white;'>  </span>";
+>  //$ans1 = join($joinstr,$syns);
+>  $ans = "syngroup $eid:<br/>$html";
+>  //dbgprint(true,"basicadjust syn callback html=\n  $html\n");
+>  return $ans;
+> }
+> public function syns_callback_v1($matches) {
+>  // OLD: <hwdetail><eid>A</eid><syns>B</syns></hwdetail>
+>  // NEW: 
+>  $eid = $matches[1]; 
+>  $synstr = $matches[2];
+>  if (! (preg_match('|^<s>(.*?)</s>$|',$synstr,$tempmatch))) {
+>   $synstr1 = str_replace(',', ', ',$synstr);
+>   $ans = "<div> syngroup $eid:  $synstr1</div>";
+>   return $ans;
+>  }
+>   #$synstr1 = str_replace(',', ', ',$synstr);
+>   #$ans = "<div> syngroup $eid:  $synstr1</div>";
+>   #return $ans;
+> 
+>  $synstr1 = $tempmatch[1];
+>  $items = preg_split('| *, *|',$synstr1);
+>  $syns = [];
+>  $html = "<table>";
+>  $i = 0;
+>  $html = $html . "<tr>";
+>  foreach($items as $item) {
+>   if ($i == 5) {
+>    $html = $html . "</tr>";
+>    $html = $html . "<tr>";
+>    $i = 0;
+>   }
+>   list($syn,$gen) = preg_split('|-|',$item);
+>   $html = $html . "<td><s>$syn</s></td>";
+>   $i = $i + 1;
+>  }
+>  $html = $html . "</tr>";  // not always right!
+>  $html = $html . "</table>";
+>  
+>  //$joinstr = "<span style='background-color: white;'>  </span>";
+>  //$ans1 = join($joinstr,$syns);
+>  $ans = "syngroup $eid:<br/>$html";
+>  dbgprint(true,"basicadjust syn callback html=\n  $html\n");
+>  return $ans;
+> }
+> 
+> public function syns_callback_v0($matches) {
+>  // OLD: <hwdetail><eid>A</eid><syns>B</syns></hwdetail>
+>  // NEW: 
+>  $eid = $matches[1]; 
+>  $syns = $matches[2];  
+>  $syns1 = str_replace(',', ', ',$syns);
+>  $ans = "<div> syngroup $eid:  $syns1</div>";
+* 22 basicdisplay.php
+*************************************************************
+diff for basicdisplay.php
+ file1= /c/xampp/htdocs/kosha-dev/v5/csl-websanlexicon/makotemplates/web/webtc/basicdisplay.php
+ file2= /c/xampp/htdocs/kosha-dev/v5/apps/abch/web/webtc/basicdisplay.php
+diff /c/xampp/htdocs/kosha-dev/v5/csl-websanlexicon/makotemplates/web/webtc/basicdisplay.php /c/xampp/htdocs/kosha-dev/v5/apps/abch/web/webtc/basicdisplay.php
+86a87
+>  $this->dbg = true;
+124a126
+>   dbgprint($this->dbg,"table = $row1a\n<br/>{$this->row}\n");
+131a134
+>  
+207a211,216
+>   } else if ($el == "table"){
+>     $this->row .= "<table> ";
+>    } else if ($el == "tr"){
+>     $this->row .= "<tr> ";
+>    } else if ($el == "td"){
+>     $this->row .= "<td> ";
+210a220
+>     
+246a257,262
+>   } else if ($el == "table"){
+>     $this->row .= " </table> ";
+>    } else if ($el == "tr"){
+>     $this->row .= " </tr> ";
+>    } else if ($el == "td"){
+>     $this->row .= " </td> ";
+* 7 getwordClass.php
+*************************************************************
+diff for getwordClass.php
+ file1= /c/xampp/htdocs/kosha-dev/v5/csl-websanlexicon/makotemplates/web/webtc/getwordClass.php
+ file2= /c/xampp/htdocs/kosha-dev/v5/apps/abch/web/webtc/getwordClass.php
+diff /c/xampp/htdocs/kosha-dev/v5/csl-websanlexicon/makotemplates/web/webtc/getwordClass.php /c/xampp/htdocs/kosha-dev/v5/apps/abch/web/webtc/getwordClass.php
+26a27,28
+>   $dbg = true;
+>   dbgprint($dbg,"GetwordClass table1=\n{$this->table1}\n");
+46c48
+<     // As occurs in the print of these dictionaries. So slp1_deva1.xml is
+---
+>     // As occurs in the print of these dictionaries. So slp1_deva1.ml is
+* 12 getword_data.php
+*************************************************************
+diff for getword_data.php
+ file1= /c/xampp/htdocs/kosha-dev/v5/csl-websanlexicon/makotemplates/web/webtc/getword_data.php
+ file2= /c/xampp/htdocs/kosha-dev/v5/apps/abch/web/webtc/getword_data.php
+diff /c/xampp/htdocs/kosha-dev/v5/csl-websanlexicon/makotemplates/web/webtc/getword_data.php /c/xampp/htdocs/kosha-dev/v5/apps/abch/web/webtc/getword_data.php
+101,103c101,107
+<  # adjust body
+<  $body = preg_replace('|<td.*?>|','',$body);
+<  $body = preg_replace('|</td></tr>|','',$body);
+---
+>  # adjust body. 10-23-2023  Why is this done?
+>  if ($dict == "abch") {
+>   //
+>  }else {
+>   $body = preg_replace('|<td.*?>|','',$body);
+>   $body = preg_replace('|</td></tr>|','',$body);
+>  }
+* 29 indexcaller.php
+*************************************************************
+diff for indexcaller.php
+ file1= /c/xampp/htdocs/kosha-dev/v5/csl-websanlexicon/makotemplates/web/webtc/indexcaller.php
+ file2= /c/xampp/htdocs/kosha-dev/v5/apps/abch/web/webtc/indexcaller.php
+diff /c/xampp/htdocs/kosha-dev/v5/csl-websanlexicon/makotemplates/web/webtc/indexcaller.php /c/xampp/htdocs/kosha-dev/v5/apps/abch/web/webtc/indexcaller.php
+8c8
+<  <title>${dicttitle} Basic</title>
+---
+>  <title>Abhidhānacintāmaṇi of Hemacandrācārya Basic</title>
+32c32
+<         <span id="title">${dictname}</span>
+---
+>         <span id="title">Abhidhānacintāmaṇi of Hemacandrācārya</span>
+48,53d47
+< %if dictlo in ['ae','mwe','bor']:
+<   <em>English, lower-case</em>
+<   <select name="transLit" id="transLit" style="display:none;">
+<   output_option("slp1","SLP1",$init);
+<   </select>
+< %else:
+65d58
+< %endif
+85,91d77
+< %if dictaccent:
+< &nbsp; &nbsp;
+< <select name="accent" id="accent">
+<  <option value="yes">Show Accents</option>
+<  <option value="no" selected="selected">Ignore Accents</option>
+< </select>
+< %endif
+96c82
+<     <td><a href="/php/correction_form.php?dict=${dictup}" target="Corrections">Corrections</a></td>
+---
+>     <td><a href="/php/correction_form.php?dict=ABCH" target="Corrections">Corrections</a></td>
+* **************************************
+* differences requiring no change
+* **************************************
+* DONE 6 dictcode.php  
+*************************************************************
+diff for dictcode.php
+ file1= /c/xampp/htdocs/kosha-dev/v5/csl-websanlexicon/makotemplates/web/webtc/dictcode.php
+ file2= /c/xampp/htdocs/kosha-dev/v5/apps/abch/web/webtc/dictcode.php
+diff /c/xampp/htdocs/kosha-dev/v5/csl-websanlexicon/makotemplates/web/webtc/dictcode.php /c/xampp/htdocs/kosha-dev/v5/apps/abch/web/webtc/dictcode.php
+2,3c2,3
+< $dictcode = "${dictlo}";
+< $dictwebversion = "${dictversion}";
+---
+> $dictcode = "abch";
+> $dictwebversion = "03.002";
+* DONE 12 dictinfo.php
+*************************************************************
+diff for dictinfo.php
+ file1= /c/xampp/htdocs/kosha-dev/v5/csl-websanlexicon/makotemplates/web/webtc/dictinfo.php
+ file2= /c/xampp/htdocs/kosha-dev/v5/apps/abch/web/webtc/dictinfo.php
+diff /c/xampp/htdocs/kosha-dev/v5/csl-websanlexicon/makotemplates/web/webtc/dictinfo.php /c/xampp/htdocs/kosha-dev/v5/apps/abch/web/webtc/dictinfo.php
+20c20
+<  public $year = '${dictyear}';  # template variable used in get_cologne_webPath method
+---
+>  public $year = '2023';  # template variable used in get_cologne_webPath method
+86,90c86
+< <%doc>
+<  mako comment
+<   // Since this file is processed as a mako template, we can't use
+<   // ${this->dict} syntax. So,
+< </%doc>
+---
+> 
+* **************************************
+*  NO DIFF
+* **************************************
+* 0 dictinfowhich.php
+*************************************************************
+diff for dictinfowhich.php
+no diff
+* 0 dispitem.php
+*************************************************************
+diff for dispitem.php
+no diff
+* 0 getword.php
+*************************************************************
+diff for getword.php
+no diff
+* 0 dal.php
+*************************************************************
+diff for dal.php
+no diff
+* 0 dbgprint.php
+*************************************************************
+diff for dbgprint.php
+no diff
+* 0 parm.php
+*************************************************************
+diff for parm.php
+no diff
+* 0 servepdf.php
+*************************************************************
+diff for servepdf.php
+no diff
+* 0 servepdfClass.php
+*************************************************************
+diff for servepdfClass.php
+no diff
