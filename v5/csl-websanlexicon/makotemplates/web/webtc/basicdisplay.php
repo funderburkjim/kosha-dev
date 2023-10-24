@@ -84,6 +84,7 @@ public function __construct($key,$string_or_array,$filterin,$dict) {
  $this->row1 = "";
  $this->html = "";
  $i = 0;
+ // $this->dbg = true;
  while($i<$ntot) {
   $linein=$matches[$i];
   // a line of data from xxx.xml, after adjustments by basicadjust.php
@@ -122,6 +123,7 @@ public function __construct($key,$string_or_array,$filterin,$dict) {
   $style = "";  
   $row1a = "<span style='$style'>{$this->row1}</span>";
   $this->table .= "$row1a\n<br/>{$this->row}\n";
+  dbgprint($this->dbg,"table = $row1a\n<br/>{$this->row}\n");
   $this->table .= "</td>";
   // This is so that there will be no need for a horizontal scroll. 12-14-2017
   $this->table .= "<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>";
@@ -129,6 +131,7 @@ public function __construct($key,$string_or_array,$filterin,$dict) {
   $i++;
  }
  $this->table .= "</table>\n";
+ 
 }
 
  public function getline_key1($line) {
@@ -205,9 +208,16 @@ public function __construct($key,$string_or_array,$filterin,$dict) {
      // <ab>X.</ab>  tooltip from dictionary abbreviations database
      $this->row .= "<span>";
     }
+  } else if ($el == "table"){
+    $this->row .= "<table> ";
+   } else if ($el == "tr"){
+    $this->row .= "<tr> ";
+   } else if ($el == "td"){
+    $this->row .= "<td> ";
   } else {
     // $el unrecognized
     $this->row .= "<br/>&lt;$el&gt;";
+    
   }
 
   $this->parentEl = $el;  // used by chrhndl
@@ -244,6 +254,12 @@ public function __construct($key,$string_or_array,$filterin,$dict) {
    $this->row .= "</span>";
   } else if ($el == "ab") {
    $this->row .= "</span>";
+  } else if ($el == "table"){
+    $this->row .= " </table> ";
+   } else if ($el == "tr"){
+    $this->row .= " </tr> ";
+   } else if ($el == "td"){
+    $this->row .= " </td> ";
   } 
  }
 

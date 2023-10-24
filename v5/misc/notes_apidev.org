@@ -1,0 +1,3 @@
+regarding abch in 'simple-search'
+
+webtc: basicadjust.php, basicdisplay.php, getword_data.php

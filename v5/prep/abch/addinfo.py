@@ -95,6 +95,75 @@ def info_2(lines):
  print(nchg,"changes in info_2")
  return newlines
 
+def make_kvvv_regexes():
+ keys = ['k','v','vv']
+ regexes = []
+ for key in keys:
+  regexraw = r'^;(%s){(.*?)}$' % key
+  regex = re.compile(regexraw)
+  regexes.append(regex)
+ return regexes
+
+kvvv_regexes = make_kvvv_regexes()
+
+def info_3_kvvv(line,kvvv):
+ # update kvvv from line
+ prevkvvv = {}  # previous
+ for key in kvvv.keys():
+  prevkvvv[key] = kvvv[key]
+ for regex in kvvv_regexes:
+  m = re.search(regex,line)
+  if m != None:
+   key = m.group(1)
+   value = m.group(2)
+   kvvv[key] = value
+ if kvvv['k'] != prevkvvv['k']:
+  # When 'k' changes, initialize v and vv to ''
+  kvvv['v'] = ''
+  kvvv['vv'] = ''
+ elif kvvv['v'] != prevkvvv['v']:
+  # when 'v' changes, initialize vv
+  kvvv['vv'] = '';
+                            
+def info_3_make_infoline(kvvv):
+ parts = []
+ for key in ['k','v','vv']:
+  value = kvvv[key]
+  if value != '':
+   parts.append(value)
+ attrib = ', '.join(parts)
+ newline = '<info kvvv="%s"/>' %attrib
+ return newline
+
+def info_3(lines):
+ """
+  <info kvvv="k v vv"/>
+  KaRqa, varga, upavarga
+ """
+ newlines = [] # returned
+ nchg = 0 # number of lines changed
+ metaline = None
+ prev_verse = None
+ kvvv = {'k' : '', 'v': '', 'vv': ''}
+ for iline,line in enumerate(lines):
+  if line.startswith('<L>'):
+   metaline = line
+   newlines.append(line)
+   infoline = info_3_make_infoline(kvvv)
+   newlines.append(infoline)
+  elif line.startswith('<LEND>'):
+   metaline = None
+   newlines.append(line)
+  elif metaline == None:
+   # Not in an entry
+   newlines.append(line)
+   info_3_kvvv(line,kvvv)  # assume only occurs outside <L>..<LEND>
+  else:
+   # other kinds of lines
+   newlines.append(line)
+ print(nchg,"changes in info_2")
+ return newlines
+
 if __name__=="__main__": 
  filein = sys.argv[1] #  xxx.txt input file
  fileout = sys.argv[2] # result of conversion
@@ -102,7 +171,8 @@ if __name__=="__main__":
  with codecs.open(filein,encoding='utf-8',mode='r') as f:
   lines = [line.rstrip('\r\n') for line in f]
  newlines = info_1(lines)
- newlines = info_2(newlines) # page break - not implemented
+ # newlines = info_2(newlines) # page break - not implemented
+ newlines = info_3(newlines) # k,v,vv
  with codecs.open(fileout,'w','utf-8') as f:
   for line in newlines:
    f.write(line+'\n')

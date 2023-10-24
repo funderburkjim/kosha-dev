@@ -98,9 +98,14 @@ public function getword_data_html_adapter($key,$lnum,$adjxml,$dict,$getParms,$xm
  dbgprint($dbg,"info = $info\n");
  dbgprint($dbg,"body = $body\n");
 
- # adjust body
- $body = preg_replace('|<td.*?>|','',$body);
- $body = preg_replace('|</td></tr>|','',$body);
+ if ($dict == "abch") {
+  // 
+ }else {
+  # for other dictionaries
+  # adjust body. 10-23-2023  Why ?
+  $body = preg_replace('|<td.*?>|','',$body);
+  $body = preg_replace('|</td></tr>|','',$body);
+ }
  if ($dict == 'mw') {
   // in case of MW, we remove [ID=...]</span>
   $body = preg_replace('|<span class=\'lnum\'.*?\[ID=.*?\]</span>|','',$body);

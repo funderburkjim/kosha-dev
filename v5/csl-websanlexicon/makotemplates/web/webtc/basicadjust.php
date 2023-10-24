@@ -20,12 +20,13 @@ class BasicAdjust {
  public $accent;
  public $dbg;
  public $pagecol;
- public $dict;
+ public $dict, $key;
  public function __construct($getParms,$xmlrecs) {
   $this->accent = $getParms->accent;
   $dict = $getParms->dict;
   $this->dict = $dict;
   $key = $getParms->key;
+  $this->key = $key;
   $this->dbg=false;
   $this->dal_ab = new Dal($dict,"ab");
   if (in_array($dict,array('xxx'))){
@@ -50,7 +51,7 @@ class BasicAdjust {
  $dbg = false;
  $line = preg_replace('|<hwdetails>(.*?)</hwdetails>|',
          '<div style="background-color: beige;">\1</div>',$line);
-  // for koshas like anhk
+  // for koshas like anhk, abch
   $line = preg_replace_callback('|<hwdetail><hw>(.*?)</hw><meaning>(.*?)</meaning></hwdetail>|',
     'BasicAdjust::meaning_callback',
      $line);
@@ -76,12 +77,98 @@ public function meaning_callback($matches) {
  return $ans;
 }
 public function syns_callback($matches) {
- // OLD: <hwdetail>naga-pum</hw><meaning>sarpa,gaja,sirsa</meaning><hwdetail>
- // NEW: <div><b>naga-pum</b> meaning(s) sarpa, gaja, sirsa</div>
+ // OLD: <hwdetail><eid>A</eid><syns>B</syns></hwdetail>
+ // NEW: 
  $eid = $matches[1]; 
- $meanings = $matches[2];  
- $meanings1 = str_replace(',', ', ',$meanings);
- $ans = "<div> syngroup $eid:  $meanings1</div>";
+ $synstr = $matches[2];
+ if (! (preg_match('|^<s>(.*?)</s>$|',$synstr,$tempmatch))) {
+  // should not occur
+  $synstr1 = str_replace(',', ', ',$synstr);
+  $ans = "<div> syngroup $eid:  $synstr1</div>";
+  return $ans;
+ }
+
+ $key = $this->key;
+ $synstr1 = $tempmatch[1];
+ $items = preg_split('| *, *|',$synstr1);
+ $syns = [];
+ $html = "";
+ $j = 0;
+ $nitems = count($items);
+ $i = 1;
+ $prevgen = null;
+ foreach($items as $item) {
+  if ($j == 5) {
+   $html = $html . "<br/>";
+   $j = 0;
+  }
+  list($syn,$gen) = preg_split('|-|',$item);
+  $syn1 = "<s>$syn</s>";
+  if ($syn == $key) {
+   // emphasize the display for the user request
+   //$syn1 = "EMPHASIZE ($key) <span style='color:red'>$syn1</span>";
+   $syn1 = "<span style='font-size:larger;'>$syn1</span>";
+  }
+  if ($gen == $prevgen) {
+   $html = $html . "$syn1";
+  } else {
+   // different gender than previous. Show gender
+   $html = $html . "$syn1-<s>$gen</s>";
+  }
+  $prevgen = $gen;
+  if ($i != $nitems) {
+   $html = $html . ", ";
+  }
+  $i = $i + 1;
+  $j = $j + 1;
+ }
+ $ans = "syngroup $eid:<br/>$html";
+ //dbgprint(true,"basicadjust syn callback html=\n  $html\n");
+ return $ans;
+}
+
+public function syns_callback_v1($matches) {
+ // OLD: <hwdetail><eid>A</eid><syns>B</syns></hwdetail>
+ // NEW: 
+ $eid = $matches[1]; 
+ $synstr = $matches[2];
+ if (! (preg_match('|^<s>(.*?)</s>$|',$synstr,$tempmatch))) {
+  $synstr1 = str_replace(',', ', ',$synstr);
+  $ans = "<div> syngroup $eid:  $synstr1</div>";
+  return $ans;
+ }
+
+ $synstr1 = $tempmatch[1];
+ $items = preg_split('| *, *|',$synstr1);
+ $syns = [];
+ $html = "<table>";
+ $i = 0;
+ $html = $html . "<tr>";
+ foreach($items as $item) {
+  if ($i == 5) {
+   $html = $html . "</tr>";
+   $html = $html . "<tr>";
+   $i = 0;
+  }
+  list($syn,$gen) = preg_split('|-|',$item);
+  $html = $html . "<td><s>$syn</s></td>";
+  $i = $i + 1;
+ }
+ $html = $html . "</tr>";  // not always right!
+ $html = $html . "</table>";
+ 
+ $ans = "syngroup $eid:<br/>$html";
+ //dbgprint(true,"basicadjust syn callback html=\n  $html\n");
+ return $ans;
+}
+
+public function syns_callback_v0($matches) {
+ // OLD: <hwdetail><eid>A</eid><syns>B</syns></hwdetail>
+ // NEW: 
+ $eid = $matches[1]; 
+ $syns = $matches[2];  
+ $syns1 = str_replace(',', ', ',$syns);
+ $ans = "<div> syngroup $eid:  $syns1</div>";
  return $ans;
 }
 

@@ -157,25 +157,26 @@ def construct_xmlstring_2(datalines,hwrec):
  tail = construct_xmltail(hwrec)
  dbgout(dbg,"tail: %s" % tail)
  #3. construct body
- """ sample of datalines
-<eid>3077<syns>mAkzika-klI,maDu-klI
-<eid>3078<syns>maDUcCizwa-klI,sikTaka-klI
-mAkzikAdi maDu kzOdraM maDUcCizwaM tu sikTakam .
-
-<H1><h><key1>mAkzika</key1><key2>mAkzika</key2></h>
- <body>
-<lb/><eid>3077</eid> synonyms <syns><s>mAkzika-klI,maDu-klI</s></syns>
-<lb/><eid>3078</eid> synonums <syns><s>maDUcCizwa-klI,sikTaka-klI</s></syns>
-mAkzikAdi maDu kzOdraM maDUcCizwaM tu sikTakam .
-</body>
-
+ """ 
+Sample entr
+<L>1233<pc>39
+<info kvvv="<s>tiryakkARqaH</s>, <s>pfTvIkAyaH</s>"/>
+<eid>3076<syns><s>SilA-strI,aDodAru-klI</s>
+<eid>3077<syns><s>nAsA-strI,urDvadAru-klI</s>
+<s>stamBAdeH syAdaDodArO SilA nAsorDvadAruRi .. 1008 ..</s>
+<LEND>
+constructed html
  """
- # partition datalines into hwdetails and entrydetails
+ # partition datalines into infos hwdetails and entrydetails
+ infos = []
  hwdetails = []
  entrydetails = []
  for i,x0 in enumerate(datalines):
-  x = re.sub(r'</?s>','',x0) # 10-22-2023
-  if x.startswith('<'):
+  # remove <s> markup
+  x = re.sub(r'</?s>','',x0)
+  if x.startswith('<info'):
+   infos.append(x)
+  elif x.startswith('<'):
    hwdetails.append(x)
   else:
    entrydetails.append(x)
@@ -206,12 +207,21 @@ mAkzikAdi maDu kzOdraM maDUcCizwaM tu sikTakam .
   y = '%s%s' % (y1,y2)
   z = '<hwdetail>%s</hwdetail>' % y
   hwdetails1.append(z)
+ # add formatting to info(s)
+ # Assume exactly 1 info line
+ info = infos[0]
+ m = re.search(r'<info kvvv="(.*?)"/>',info)
+ if m != None:
+  kvvv_val = m.group(1) # value of kvvv
+  info_str = "<s>%s</s>" % kvvv_val
  # string form
  hwdetails_str = ''.join(hwdetails1)
  # construct body0, by combining hwdetails and entrydetails
  bodya = '<hwdetails>' + hwdetails_str + '</hwdetails>'
  bodyb = '<entrydetails>' + entrydetails_str +'</entrydetails>'
- body = bodya + bodyb
+ bodyc = '<div>%s</div>' % info_str  # put it into a div
+ body = bodyc + bodya + bodyb
+ 
  dbgout(dbg,"body: %s" % body)
  #4. construct result
  data = "<H1><h>%s</h><body>%s</body><tail>%s</tail></H1>" % (h,body,tail)
