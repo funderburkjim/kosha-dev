@@ -84,10 +84,9 @@ public function syns_callback($matches) {
  if (! (preg_match('|^<s>(.*?)</s>$|',$synstr,$tempmatch))) {
   // should not occur
   $synstr1 = str_replace(',', ', ',$synstr);
-  $ans = "<div> syngroup $eid:  $synstr1</div>";
+  $ans = "<div> synset $eid:  $synstr1</div>";
   return $ans;
  }
-
  $key = $this->key;
  $synstr1 = $tempmatch[1];
  $items = preg_split('| *, *|',$synstr1);
@@ -122,7 +121,7 @@ public function syns_callback($matches) {
   $i = $i + 1;
   $j = $j + 1;
  }
- $ans = "syngroup $eid:<br/>$html";
+ $ans = "synset $eid:<br/>$html";
  //dbgprint(true,"basicadjust syn callback html=\n  $html\n");
  return $ans;
 }
@@ -157,7 +156,7 @@ public function syns_callback_v1($matches) {
  $html = $html . "</tr>";  // not always right!
  $html = $html . "</table>";
  
- $ans = "syngroup $eid:<br/>$html";
+ $ans = "synset $eid:<br/>$html";
  //dbgprint(true,"basicadjust syn callback html=\n  $html\n");
  return $ans;
 }
@@ -168,7 +167,7 @@ public function syns_callback_v0($matches) {
  $eid = $matches[1]; 
  $syns = $matches[2];  
  $syns1 = str_replace(',', ', ',$syns);
- $ans = "<div> syngroup $eid:  $syns1</div>";
+ $ans = "<div> synset $eid:  $syns1</div>";
  return $ans;
 }
 
