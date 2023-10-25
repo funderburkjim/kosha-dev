@@ -41,4 +41,7 @@ edit csl-pywork/makotemplates/pywork/redo_xml.sh
 edit csl-pywork/makotemplates/pywork/make_xml.py
  construct_xmlstring_1 (for anhk)
  construct_xmlstring_2 (for abch)
- 
+
+gender-frequency list
+python gender_list.py abch.txt gender_list.txt
+
