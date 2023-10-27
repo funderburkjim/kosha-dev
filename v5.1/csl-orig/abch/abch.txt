@@ -4296,7 +4296,7 @@
 <L>530<pc>23
 <info kvvv="<s>martyakARqaH</s>"/>
 <eid>1600<syns><s>suvAsinI-strI,vaDUwI-strI,ciraRwI-strI</s>
-<eid>1601<syns><s>saDarmiRI-strI,patnI-strI,sahacarI-strI,pARigfhItI-strI,gfhiRI-strI,gfhAH-puMba,gfha-klI,dArAH-strIba,kzetra-klI,vaDU-strI,BAryA-strI,janI-strI,jAyA-strI,parigraha-puM,dvitIyA-strI,UQA-strI,kalatra-klI</s>
+<eid>1601<syns><s>saDarmiRI-strI,patnI-strI,sahacarI-strI,pARigfhItI-strI,gfhiRI-strI,gfhAH-puMba,gfha-klI,dArAH-puMba,kzetra-klI,vaDU-strI,BAryA-strI,janI-strI,jAyA-strI,parigraha-puM,dvitIyA-strI,UQA-strI,kalatra-klI</s>
 <eid>1602<syns><s>puranDrI-strI,kuwumbinI-strI</s>
 <s>suvAsinI vaDUwI syAcciriRwyaTa saDarmiRI .</s>
 <s>patnI sahacarI pARigfhItI gfhiRI gfhAH .. 512 ..</s>
