@@ -12845,7 +12845,7 @@
 <L>1828<pc>54
 <info kvvv="<s>sAmAnyakARqaH</s>"/>
 <eid>4321<syns><s>guRa-puM,upasarjana-klI,upAgrya-klI,apraDAna-klI</s>
-<eid>4322<syns><s>aDama-vA,nikfzwa-vA,aRaka-vA,garhya-vA,avadya-vA,kARqa-vApuMklI,kutsita-vA,apakfzwa-vA,pratikfzwa-vA,yApya-vA,rePa-puM,avama-vA,bruva-vA,Kewa-vA,pApa-vA,apaSada-vA,kupUya-vA,cela-vA,arvan-vA</s>
+<eid>4322<syns><s>aDama-vA,nikfzwa-vA,aRaka-vA,garhya-vA,avadya-vA,kARqa-vA,kutsita-vA,apakfzwa-vA,pratikfzwa-vA,yApya-vA,rePa-puM,avama-vA,bruva-vA,Kewa-vA,pApa-vA,apaSada-vA,kupUya-vA,cela-vA,arvan-vA</s>
 <s>guRopasarjanopAgryARyapraDAne'DamaM punaH .. 1441 ..</s>
 <s>nikfzwamaRakaM garhyamavadyaM kARqakutsite .</s>
 <s>apakfzwaM pratikfzwaM yApyaM rePo'vamaM bruvam .. 1442 ..</s>
