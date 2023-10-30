@@ -2900,7 +2900,7 @@
 <LEND>
 <L>383<pc>20
 <eid>1253<syns><s>DAnAH-strIba</s>
-<eid>1254<syns><s>saktu-puMklI,saktavaH-puMklIba</s>
+<eid>1254<syns><s>saktu-puMklI,saktavaH-puMklIbahu</s>
 <s>BfzwA yavAH punarDAnA DAnAcUrRaM tu saktavaH .</s>
 <LEND>
 <L>384<pc>20
@@ -7148,8 +7148,8 @@
 <LEND>
 <L>1134<pc>37
 <eid>2887<syns><s>karmaBUmi-strI</s>
-<eid>2888<syns><s>Barata-klIba</s>
-<eid>2889<syns><s>ErAvata-klIba</s>
+<eid>2888<syns><s>Barata-klIbahu</s>
+<eid>2889<syns><s>ErAvata-klIbahu</s>
 <eid>2890<syns><s>videha-puMba</s>
 <eid>2891<syns><s>PalaBUmi-strI</s>
 <s>BaratAnyErAvatAni videhASca kurUnvinA .</s>
