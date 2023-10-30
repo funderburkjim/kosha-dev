@@ -230,6 +230,10 @@ public function __construct($key,$string_or_array,$filterin,$dict) {
   } else if (in_array($el,array("table","tr","td","th"))) {
     $elt_with_attribs = $this->sthndl_elt_attribs($attribs,$el);
     $this->row .= $elt_with_attribs;
+  } else if (in_array($el,array("hr"))) {
+    // empty elements
+    $elt_with_attribs = $this->sthndl_elt_attribs($attribs,$el);
+    $this->row .= $elt_with_attribs;
   } else {
     // $el unrecognized
     $this->row .= "<br/>&lt;$el&gt;"; 
@@ -287,10 +291,12 @@ public function __construct($key,$string_or_array,$filterin,$dict) {
    $style = "font-size:smaller; font-weight:bold;";
    $this->row .= "<span style='$style'> $hrefdata</span>";   
   } else if ($this->parentEl == "pc") {
+   // 10-30-2023 Believed to be unused - handled in dispitem.php
    $hrefdata = $this->getHrefPage($data);
    $style = "font-size:normal; color:rgb(160,160,160);";
    $this->row1 .= "<span style='$style'> [Printed book page $hrefdata]</span>";
   } else if ($this->parentEl == "L") {
+   // 10-30-2023 Believed to be unused - handled in dispitem.php
    $style = "font-size:normal; color:rgb(160,160,160);";
    $this->row1 .= "<span style='$style'> [Cologne record ID=$data]</span>";
   } else if ($this->parentEl == 's') {

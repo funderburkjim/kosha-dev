@@ -12,7 +12,7 @@
 require_once('dbgprint.php');
 require_once('parm.php');
 class DispItem { // info to construct a row of the display table
- public $dict,$dictup,$key,$lnum,$info,$html;
+ public $dict,$dictup,$key,$lnum,$info,$html,$dictlo;
  public $pginfo,$hcode,$key2,$hom;
  public $hrefdata_prev,$hrefdata;
  public $err; // Boolean
@@ -23,6 +23,7 @@ class DispItem { // info to construct a row of the display table
   $this -> cssshade=False;
   $this->dict = $dict;
   $this->dictup = strtoupper($dict);
+  $this->dictlo = strtolower($dict);
   $this->err = False;
   list($this->key,$this->lnum,$rec) = $dbrec;
   $dbg=false;
@@ -199,6 +200,7 @@ dbgprint($dbg,"dispitem. key2=$key2\n");
   if ($hrefdata == $hrefdata_prev) {
    $pageshow="";
   }
+  // dbgprint(true,"dispitem: keyshow=$keyshow\n    lnumshow=$lnumshow\n\n    pageshow=$pageshow\n");
   return array($keyshow,$lnumshow,$pageshow);
  }
  public function get_pageshow($hrefdata) {
@@ -210,7 +212,13 @@ dbgprint($dbg,"dispitem. key2=$key2\n");
  public function get_lnumshow_id($lnum) {
   // 08-04-2020
   $style = "font-size:normal; color:rgb(160,160,160);";
-  return "[<span title='Cologne record ID' style='$style'>ID=$lnum</span>]";
+  $ans = "[<span title='Cologne record ID' style='$style'>ID=$lnum</span>]";
+  if (in_array($this->dictlo, array("abch"))) {
+   // 10-30-2023
+   $ans .= "<hr style='height:3px;border-width:0;color:gray;background-color:gray'>";
+  }
+  //dbgprint(true,"get_lnumshow_id. dict={$this->dict}, ans=\n$ans\n\n");
+  return $ans;
  }
  public function basicRow1Default($prev) {
   list($keyshow,$lnumshow,$pageshow) = $this->basicRow1DefaultParts($prev);
