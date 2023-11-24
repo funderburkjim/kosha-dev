@@ -1,7 +1,8 @@
 अभिधानचिन्तामणि  by हेमचन्द्राचार्य
 # --------------
 # The base version is abch1.txt from Dhaval
-# redo.sh generates abch.txt
+sh redo.sh # generates abch.txt from abch1.txt
+# this is what it does
 # convert abch1.txt to slp1 version abch.txt
 python convert.py deva,slp1 abch1.txt abch.txt
 # check invertability

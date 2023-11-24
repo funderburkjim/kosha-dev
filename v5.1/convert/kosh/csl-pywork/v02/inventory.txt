@@ -1,0 +1,69 @@
+*:pywork/hwparse.py:T
+; templates for some or all dictionaries
+*:pywork/hw.py:T
+*:pywork/redo_hw.sh:T
+*:pywork/redo_xml.sh:T
+; redo_xml.sh calls redo_postxml.sh
+*:pywork/redo_postxml.sh:T
+; -------------------------------------------
+; constant files for some or all dictionaries
+*:pywork/hw0.py:C
+*:pywork/hw2.py:C
+*:pywork/parseheadline.py:C
+*:pywork/updateByLine.py:C
+*:pywork/xml_to_xml1.py:C
+*:pywork/xml1_to_xml.py:C
+; --------------------------------------------------------------
+; files for updating web/sqlite. 
+;  Use Python sqlite rather than sqlite3
+; --------------------------------------------------------------
+*:pywork/sqlite/redo.sh:T
+*:pywork/sqlite/sqlite.py:C
+; --------------------------------------------------------------
+; files for updating web/sqlite.  OLD - changed 12-16-2020
+; All but redo.sh now Deleted (formerly T (template))
+; D indicates these files will be deleted in the target dictionary
+; directories, if present. This is to remove unused code.
+; --------------------------------------------------------------
+*:pywork/sqlite/def.sql:D
+*:pywork/sqlite/make_input.php:D
+;  *:pywork/sqlite/redo.sh:T
+; --------------------------------------------------------------
+; files for update webtc2/query_dump.txt
+; --------------------------------------------------------------
+; init_query.py was a template in websanlexicon -- but no template code found
+*:pywork/webtc2/init_query.py:C
+*:pywork/webtc2/redo.sh:T
+; 10-11-2019: Changed make_xml.py from 'CD' to 'T'
+*:pywork/make_xml.py:T
+; Note new syntax in 2nd parameter.
+*:pywork/one.dtd pywork/${dictlo}.dtd:T
+anhk abch:pywork/one1.dtd pywork/${dictlo}1.dtd:T
+; -------------------------------------------
+; distinct files for some or all dictionaries
+; -------------------------------------------
+; --------------------------------------------------------------
+; -- abbreviations
+; --------------------------------------------------------------
+;   commented out as Not required for anhk
+;anhk:pywork/${dictlo}ab/${dictlo}ab.sql:CD
+;anhk:pywork/${dictlo}ab/${dictlo}ab_input.txt:CD
+;anhk:pywork/${dictlo}ab/readme.txt:CD
+;anhk:pywork/${dictlo}ab/redo.sh:CD
+;anhk:pywork/${dictlo}ab/redo_${dictlo}ab.sh:CD
+; --------------------------------------------------------------
+; --------------------------------------------------------------
+; -- literary sources: 
+; --------------------------------------------------------------
+; commented out for anhk as not required
+;anhk:pywork/${dictlo}auth/redo.sh:CD
+;anhk:pywork/${dictlo}auth/readme.org:CD
+;anhk:pywork/${dictlo}auth/tooltip.txt:CD
+;anhk:pywork/${dictlo}auth/tooltips.sql:CD
+; ------------------------------------------------
+; downloads directory
+; ------------------------------------------------
+*:downloads/redo_all.sh:C
+*:downloads/redo_txt.sh:T
+*:downloads/redo_xml.sh:T
+*:downloads/redo_web.sh:T
