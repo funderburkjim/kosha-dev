@@ -773,8 +773,30 @@ cp -r ../prep/abch /c/xampp/htdocs/cologne/csl-orig/v02/abch/prep
 # currently redo.sh constructs prep/temp_abch.txt.
 #   we may want to modify script to further copy this to ../abch.txt 
 
+------------------------------------------------------
+# several additional steps for simple-search to get
+# simple-search hwnorm1c.sqlite
+# repository hwnorm1
+cd /c/xampp/htdocs/cologne/hwnorm1
+# edit sanhw1/sanhw1.py
+# 1. add "ABCH":"2023" to dictyear
+# 2. add "ABCH" to san_san_dicts
+
+# Then, follow instructions of hwnorm1/sanhw1/readme.txt, namely
+
+cd sanhw1
+sh redo.sh
+mv hwnorm1c.sqlite ../../csl-apidev/simple-search/hwnorm1/
+
+# push hwnorm1 repository to github
+# hownorm1c.txt, sanhw1.py, sanhw1.txt are modified
+git add .
+git commit -m "ABCH: Ref: https://github.com/funderburkjim/kosha-dev/issues/23"
+git push
+#  3 files changed, 25054 insertions(+), 22983 deletions(-)
+
 ------------------------------
-11-24-2023  csl-apidev
+11-24-2023 csl-apidev
 
 1.  copy basicadjust, basicdisplay from csl-websanlexicon to csl-apidev
 cd /c/xampp/htdocs/cologne/csl-websanlexicon/v02
@@ -848,3 +870,4 @@ git add .
 git commit -m "convert dev version 5.1 to cdsl
 Ref: https://github.com/funderburkjim/kosha-dev/issues/23"
 git push
+
