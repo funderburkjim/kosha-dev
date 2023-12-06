@@ -1,4 +1,4 @@
-अभिधानचिन्तामणि  by हेमचन्द्राचार्य
+अभिधानचिन्तामणिपरिशिष्ट  by हेमचन्द्राचार्य
 # --------------
 # The base version is acph1.txt from Dhaval
 sh redo.sh # generates acph.txt from acph1.txt
