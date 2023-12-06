@@ -43,6 +43,11 @@ edit csl-pywork/makotemplates/pywork/make_xml.py
  construct_xmlstring_1 (for anhk)
  construct_xmlstring_2 (for acph)
 
+edit csl-pywork/makotemplates/web/webtc/dispitem.php
+  For specific requirement like creating synonym-gender block as in ABCH.
+edit csl-pywork/makotemplates/web/webtc/getword_data.php
+  For $L instead of $lnum
+
 gender-frequency list
 python gender_list.py acph.txt gender_list.txt
 

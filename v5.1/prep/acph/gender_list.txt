@@ -1,0 +1,9 @@
+0072 a          avyayIBAva,indeclineable
+0229 klI        klIba,neuter
+0001 klIdvi     klIba dvivacana,neuter dual
+0904 puM        puMs,masculine
+0003 puMba      puMs bahuvacana,masculine plural
+0006 puMdvi     puMs dvivacana,masculine dual
+0001 puMklI     puMs klIba vA,masculine or neuter
+0312 strI       strI,feminine
+0002 strIba     strI bahuvacana,feminine plural

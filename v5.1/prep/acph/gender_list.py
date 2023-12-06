@@ -26,6 +26,7 @@ def gender_freq(lines):
     syngens_str = m.group(1)
     syngens = re.split(r' *, *',syngens_str)
     for syngen in syngens:
+     print(syngen)
      syn,gen = syngen.split('-')
      # update d
      if gen not in d:
