@@ -17,6 +17,12 @@ alldictparms = {
   "dictname":u"Abhidhānacintāmaṇi of Hemacandrācārya",
   "dictversion":"03",
  },
+ "acph": {
+  "dictup":"ACPH",
+  "dictlo":"acph",
+  "dictname":u"Abhidhānacintāmaṇipariśiṣṭa of Hemacandrācārya",
+  "dictversion":"03",
+ },
 }
 """
  "armh": {
