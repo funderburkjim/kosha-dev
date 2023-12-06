@@ -19,7 +19,7 @@ class Hwmeta(object):
  # <key>val
 %if dictlo == 'mw':
  keysall_list = ['L','pc','k1','k2','h','e']  # standard order
-%elif dictlo in ['anhk','abch']:
+%elif dictlo in ['anhk','abch', 'acph']:
  keysall_list = ['L','pc']
 %else:
  keysall_list = ['L','pc','k1','k2','h']  # standard order
@@ -93,7 +93,7 @@ class Entry(object):
      a.append(k1m)
      d[k1m] = True
   return a
-%elif dictlo in ['abch']:
+%elif dictlo in ['abch', 'acph']:
  def init_keys(self):
   a = []
   d = {}  # used to check duplicates

@@ -308,7 +308,7 @@ def make_xml(filedig,filehw,fileout):
   # construct output
 %if dictlo in ['anhk']:
   xmlstring = construct_xmlstring_1(datalines,hwrec)
-%elif dictlo in ['abch']:
+%elif dictlo in ['abch', 'acph']:
   # using abch form
   xmlstring = construct_xmlstring_2(datalines,hwrec)
 %else:

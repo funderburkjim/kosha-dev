@@ -31,5 +31,17 @@ alldictparms = {
   "dictbe":u"Abhidhānacintāmaṇi of Hemacandrācārya",
   "dicttitle":u"Abhidhānacintāmaṇi of Hemacandrācārya",
  },
+ "acph":{
+  "dictup":"ACPH",
+  "dictlo":"acph",
+  "dictname":u"Abhidhānacintāmaṇipariśiṣṭa of Hemacandrācārya",
+  "dictversion":"03",
+  "dictyear":"2023",
+  "dictaccent":False,
+  "webtc2devatextoption":True,
+  "dictwc":u"https://www.worldcat.org/title/Abhidhānacintāmaṇi of Hemacandrācārya",
+  "dictbe":u"Abhidhānacintāmaṇipariśiṣṭa of Hemacandrācārya",
+  "dicttitle":u"Abhidhānacintāmaṇipariśiṣṭa of Hemacandrācārya",
+ },
 
 }
