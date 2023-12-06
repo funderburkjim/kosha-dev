@@ -50,7 +50,7 @@ class Getword_data {
    $adjxmldata0 = $adjmatches[$i];
    $html = $this->getword_data_html_adapter($key0,$lnum0,$adjxmldata0,$dict,$getParms,$xmldata0);
    // 10-23-2023 For dict abch, use $L instead of $lnum0.
-   if (in_array($dict,['abch','anhk'])) {
+   if (in_array($dict,['abch','anhk','acph'])) {
     if(preg_match('|<L>(.*?)</L>|',$xmldata0,$tempmatch)) {
      $lnum0 = $tempmatch[1];
     }

@@ -58,7 +58,7 @@
 ;k{<s>devakARqaH</s>}
 <L>1<pc>1
 <info kvvv="<s>devakARqaH</s>"/>
-<eid>341<syns><s>Palodaya-puM,merupfzWa-klI,vAsavAvAsa-puM,sErika-puM,didivi,dIdivi,dyu,diva-klI</s>
+<eid>341<syns><s>Palodaya-puM,merupfzWa-klI,vAsavAvAsa-puM,sErika-puM,didivi-puM,dIdivi-puM,dyu-puM,diva-klI</s>
 <s>Palodayo merupfzWaM vAsavAvAsasErikO .</s>
 <s>didivirdIdivirdyuSca divaM ca svargavAcakAH .. 2 ..</s>
 <LEND>
@@ -106,7 +106,7 @@
 <LEND>
 <L>6<pc>1
 <info kvvv="<s>devakARqaH</s>"/>
-<eid>397<syns><s>mA-puM,taporAja-puM,SuBAMSu-puM,SvetavAhana-puM,jarRa-puM,sfpra-puM,rAjarAja-puM,yajata-puM,kfttikABava-puM,yajYarAj-puM,OzaDIgarBa-puM,tapasa-puM,Sayata-puM,buDa-puM,syanda-puM,KasinDu-puM,sinDUtTa-puM,SravizWAramaRa-puM,AkASacamasa-puM,pItu-puM,kledu-puM,parvari-puM,ciklida-puM,parijvan-puM,yuvan-puM,nemi-puM,candira-puM,snehu-puM,ekaBU</s>
+<eid>397<syns><s>mA-puM,taporAja-puM,SuBAMSu-puM,SvetavAhana-puM,jarRa-puM,sfpra-puM,rAjarAja-puM,yajata-puM,kfttikABava-puM,yajYarAj-puM,OzaDIgarBa-puM,tapasa-puM,Sayata-puM,buDa-puM,syanda-puM,KasinDu-puM,sinDUtTa-puM,SravizWAramaRa-puM,AkASacamasa-puM,pItu-puM,kledu-puM,parvari-puM,ciklida-puM,parijvan-puM,yuvan-puM,nemi-puM,candira-puM,snehu-puM,ekaBU-puM</s>
 <s>candrastu mAstaporAjO SuBAMSuH SvetavAhanaH .. 10 ..</s>
 <s>jarRaH sfpro rAjarAjo yajataH kfttikABavaH .</s>
 <s>yakzarAqOzaDIgarBastapasaH Sayato buDaH .. 11 ..</s>
@@ -125,7 +125,7 @@
 <info kvvv="<s>devakARqaH</s>"/>
 <eid>450<syns><s>Bfgu-puM</s>
 <eid>451<syns><s>paNgu-puM,Srutakarman-puM,mahAgraha-puM,SrutaSravas-puM,anuja-puM,kAla-puM,brahmaRya-puM,yama-puM,sTira-puM,krUrAtman-puM</s>
-<eid>452<syns><s>uparAga-puM,upaplava</s>
+<eid>452<syns><s>uparAga-puM,upaplava-puM</s>
 <s>Sukre BfguH SanO paNguH SrutakarmA mahAgrahaH .. 14 ..</s>
 <s>SrutaSravo'nujaH kAlo brahmaRyaSca yamaH sTiraH .</s>
 <s>krUrAtmA cATa rAhO syAduparAga upaplavaH .. 15 ..</s>
@@ -186,7 +186,7 @@
 <L>16<pc>2
 <info kvvv="<s>devakARqaH</s>"/>
 <eid>538<syns><s>himAgama-puM</s>
-<eid>540<syns><s>pikabAnDava-puM,puzpasADAraRa</s>
+<eid>540<syns><s>pikabAnDava-puM,puzpasADAraRa-puM</s>
 <eid>541<syns><s>uzmAyaRa-puM,AKora-puM,padma-puM</s>
 <eid>546<syns><s>ftuvftti-strI,yugAMSaka-puM,kAlagranTi-strI,mAsamala-puM,saMvat-strI,sarvartu-puM,SArada-puM,vatsa-puM,idvatsara-puM,iqAvatsara-puM,paravARivat-puM</s>
 <s>himAgamastu hemante vasante pikavAnDavaH .</s>
@@ -1053,7 +1053,7 @@
 <L>125<pc>6
 <info kvvv="<s>tiryakkARqaH</s>, <s>jalakAyaH</s>"/>
 <eid>5075<syns><s>murandarA-strI,muralA-strI</s>
-<eid>5076<syns><s>suravelA-strI,nandinI</s>
+<eid>5076<syns><s>suravelA-strI,nandinI-strI</s>
 <s>muraMdarA tu muralA suravelA tu nandinI .. 165 ..</s>
 <LEND>
 <L>126<pc>6
@@ -1092,7 +1092,7 @@
 ;v{<s>vanaspatikAyaH</s>}
 <L>130<pc>7
 <info kvvv="<s>tiryakkARqaH</s>, <s>vanaspatikAyaH</s>"/>
-<eid>3333<syns><s>Arohaka-puM,skanDin-puM,sImika-puM,haritacCada-puM,Uru-pu,jantu-puM,vahniBU-puM</s>
+<eid>3333<syns><s>Arohaka-puM,skanDin-puM,sImika-puM,haritacCada-puM,Uru-puM,jantu-puM,vahniBU-puM</s>
 <s>vfkze tvArohakaH skanDI sImiko haritacCadaH .</s>
 <LEND>
 ;c{<s>iti vanaspatikAyaH .</s>}
