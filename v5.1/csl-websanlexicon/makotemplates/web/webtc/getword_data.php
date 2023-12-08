@@ -98,7 +98,7 @@ public function getword_data_html_adapter($key,$lnum,$adjxml,$dict,$getParms,$xm
  dbgprint($dbg,"info = $info\n");
  dbgprint($dbg,"body = $body\n");
 
- if ($dict == "abch") {
+ if (in_array($dict,['abch','acph'])) {
   // 
  }else {
   # for other dictionaries
