@@ -2,7 +2,7 @@
 # the version  is value
 # of contextvariable dictversion.
 # It is suffixed with this 'microversion', which should be #  changed often.
-microversion = '.002'  # abch 11-19-2023
+microversion = '.002'  # acph 12-09-2023
 alldictparms = {
  "gra": {
   "dictup":"GRA",
@@ -244,11 +244,16 @@ alldictparms = {
   "dictname":u"Vaidya Standard Sanskrit-English Dictionary",
   "dictversion":"02",
  },
-
  "abch": {
   "dictup":"ABCH",
   "dictlo":"abch",
   "dictname":u"Abhidhānacintāmaṇi of Hemacandrācārya",
+  "dictversion":"03",
+ },
+ "acph": {
+  "dictup":"ACPH",
+  "dictlo":"acph",
+  "dictname":u"Abhidhānacintāmaṇipariśiṣṭa of Hemacandrācārya",
   "dictversion":"03",
  },
 

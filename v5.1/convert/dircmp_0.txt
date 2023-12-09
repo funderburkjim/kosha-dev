@@ -1,20 +1,26 @@
 diff kosh cologne
+Only in cologne : abch
 Common subdirectories : csl-orig, csl-pywork, csl-websanlexicon, testdir
 
  diff kosh/csl-orig cologne/csl-orig
  Common subdirectories : v02
 
   diff kosh/csl-orig/v02 cologne/csl-orig/v02
-  Common subdirectories : abch
+  Common subdirectories : abch, acph
 
    diff kosh/csl-orig/v02/abch cologne/csl-orig/v02/abch
    Identical files : abch-meta2.txt, abch.txt, abch_hwextra.txt, abchheader.xml
+
+   diff kosh/csl-orig/v02/acph cologne/csl-orig/v02/acph
+   Identical files : acph-meta2.txt, acph.txt, acph_hwextra.txt, acphheader.xml
 
  diff kosh/csl-pywork cologne/csl-pywork
  Only in cologne/csl-pywork : .gitignore, readme.md
  Common subdirectories : v02
 
   diff kosh/csl-pywork/v02 cologne/csl-pywork/v02
+  Only in kosh/csl-pywork/v02 : csl-pywork
+  Only in cologne/csl-pywork/v02 : cologne_test.sh
   Identical files : generate_pywork.sh, readme.md, readme_dtd.txt, readme_selective.md, redo_xampp_selective.sh, xmlchk_xampp.sh
   Differing files : dictparms.py, generate.py, generate_dict.sh, generate_orig.sh, inventory.txt, inventory_orig.txt, redo_cologne_all.sh, redo_xampp_all.sh
   Common subdirectories : distinctfiles, makotemplates, utilities
@@ -27,14 +33,13 @@ Common subdirectories : csl-orig, csl-pywork, csl-websanlexicon, testdir
    Common subdirectories : downloads, pywork
 
     diff kosh/csl-pywork/v02/makotemplates/downloads cologne/csl-pywork/v02/makotemplates/downloads
-    Only in cologne/csl-pywork/v02/makotemplates/downloads : 
     Identical files : redo_all.sh, redo_txt.sh, redo_web.sh, redo_xml.sh
 
     diff kosh/csl-pywork/v02/makotemplates/pywork cologne/csl-pywork/v02/makotemplates/pywork
     Only in kosh/csl-pywork/v02/makotemplates/pywork : one1.dtd, xml1_to_xml.py, xml_to_xml1.py
     Only in cologne/csl-pywork/v02/makotemplates/pywork : redo_xml_20210415.xml, sqlite_20201216
-    Identical files : parseheadline.py, updateByLine.py
-    Differing files : hw.py, hw0.py, hw2.py, hwparse.py, make_xml.py, one.dtd, redo_hw.sh, redo_postxml.sh, redo_xml.sh
+    Identical files : hw0.py, hw2.py, parseheadline.py, updateByLine.py
+    Differing files : hw.py, hwparse.py, make_xml.py, one.dtd, redo_hw.sh, redo_postxml.sh, redo_xml.sh
     Common subdirectories : mwkeys, sqlite, webtc2
 
      diff kosh/csl-pywork/v02/makotemplates/pywork/mwkeys cologne/csl-pywork/v02/makotemplates/pywork/mwkeys
@@ -56,20 +61,33 @@ Common subdirectories : csl-orig, csl-pywork, csl-websanlexicon, testdir
  Common subdirectories : v02
 
   diff kosh/csl-websanlexicon/v02 cologne/csl-websanlexicon/v02
-  Only in kosh/csl-websanlexicon/v02 : apidev_copy.sh
-  Identical files : generate.py
-  Differing files : apidev_readme.md, dictparms.py, generate_web.sh, inventory.txt, redo_cologne_all.sh, redo_xampp_all.sh
+  Only in kosh/csl-websanlexicon/v02 : csl-websanlexicon
+  Only in cologne/csl-websanlexicon/v02 : imagework
+  Identical files : apidev_readme.md, generate.py, generate_web.sh
+  Differing files : apidev_copy.sh, dictparms.py, inventory.txt, redo_cologne_all.sh, redo_xampp_all.sh
   Common subdirectories : distinctfiles, makotemplates
 
    diff kosh/csl-websanlexicon/v02/distinctfiles cologne/csl-websanlexicon/v02/distinctfiles
-   Only in kosh/csl-websanlexicon/v02/distinctfiles : abch, anhk
+   Only in kosh/csl-websanlexicon/v02/distinctfiles : anhk
    Only in cologne/csl-websanlexicon/v02/distinctfiles : acc, ae, ap, ap90, armh, ben, bhs, bop, bor, bur, cae, ccs, gra, gst, ieg, inm, krm, lan, lrv, mci, md, mw, mw72, mwe, pd, pe, pgn, pui, pw, pwg, pwkvn, sch, shs, skd, snp, stc, vcp, vei, wil, yat
+   Common subdirectories : abch
+
+    diff kosh/csl-websanlexicon/v02/distinctfiles/abch cologne/csl-websanlexicon/v02/distinctfiles/abch
+    Common subdirectories : web
+
+     diff kosh/csl-websanlexicon/v02/distinctfiles/abch/web cologne/csl-websanlexicon/v02/distinctfiles/abch/web
+     Common subdirectories : webtc
+
+      diff kosh/csl-websanlexicon/v02/distinctfiles/abch/web/webtc cologne/csl-websanlexicon/v02/distinctfiles/abch/web/webtc
+      Identical files : pdffiles.txt
 
    diff kosh/csl-websanlexicon/v02/makotemplates cologne/csl-websanlexicon/v02/makotemplates
    Common subdirectories : web
 
     diff kosh/csl-websanlexicon/v02/makotemplates/web cologne/csl-websanlexicon/v02/makotemplates/web
-    Differing files : index.php, readme.txt
+    Only in cologne/csl-websanlexicon/v02/makotemplates/web : fonts-unused
+    Identical files : readme.txt
+    Differing files : index.php
     Common subdirectories : fonts, images, js, mobile1, sqlite, utilities, webtc, webtc1, webtc2
 
      diff kosh/csl-websanlexicon/v02/makotemplates/web/fonts cologne/csl-websanlexicon/v02/makotemplates/web/fonts
@@ -83,14 +101,12 @@ Common subdirectories : csl-orig, csl-pywork, csl-websanlexicon, testdir
      Identical files : jquery.cookie.js, jquery.min.js
 
      diff kosh/csl-websanlexicon/v02/makotemplates/web/mobile1 cologne/csl-websanlexicon/v02/makotemplates/web/mobile1
-     Only in cologne/csl-websanlexicon/v02/makotemplates/web/mobile1 : 
      Identical files : index.php, main.css, main_mobile.js
 
      diff kosh/csl-websanlexicon/v02/makotemplates/web/sqlite cologne/csl-websanlexicon/v02/makotemplates/web/sqlite
      Identical files : empty.txt
 
      diff kosh/csl-websanlexicon/v02/makotemplates/web/utilities cologne/csl-websanlexicon/v02/makotemplates/web/utilities
-     Only in cologne/csl-websanlexicon/v02/makotemplates/web/utilities : 
      Identical files : transcoder.php
      Common subdirectories : transcoder
 
@@ -99,13 +115,11 @@ Common subdirectories : csl-orig, csl-pywork, csl-websanlexicon, testdir
       Differing files : slp1_deva1.xml
 
      diff kosh/csl-websanlexicon/v02/makotemplates/web/webtc cologne/csl-websanlexicon/v02/makotemplates/web/webtc
-     Only in kosh/csl-websanlexicon/v02/makotemplates/web/webtc : 
      Only in cologne/csl-websanlexicon/v02/makotemplates/web/webtc : download_fr.html, help_fr.html, indexcaller_fr.php
-     Identical files : dal.php, dbgprint.php, dictcode.php, dictinfowhich.php, download.html, getword.php, getwordClass.php, help.html, indexcaller.php, main.css, main_webtc.js, serveimg.css, servepdf.php, servepdfClass.php, translithelp.html
-     Differing files : basicadjust.php, basicdisplay.php, dictinfo.php, dispitem.php, font.css, getword_data.php, parm.php
+     Identical files : dal.php, dbgprint.php, dictcode.php, dictinfowhich.php, download.html, getword.php, getwordClass.php, help.html, indexcaller.php, main.css, main_webtc.js, serveimg.css, servepdf.php, translithelp.html
+     Differing files : basicadjust.php, basicdisplay.php, dictinfo.php, dispitem.php, font.css, getword_data.php, parm.php, servepdfClass.php
 
      diff kosh/csl-websanlexicon/v02/makotemplates/web/webtc1 cologne/csl-websanlexicon/v02/makotemplates/web/webtc1
-     Only in cologne/csl-websanlexicon/v02/makotemplates/web/webtc1 : 
      Identical files : disphier.php, index.php, keyboard.css, keyboard.js, keyboard.png, listhier.php, listhiermodel.php, listhierview.php, listparm.php, main.css, preferences.htm, transcoderfield_VKI.js
      Differing files : main.js
      Common subdirectories : help, transcoderjs

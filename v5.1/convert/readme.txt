@@ -31,7 +31,7 @@ cd /c/xampp/htdocs/kosha-dev/v5.1/convert/
 mkdir cologne/csl-orig
 mkdir cologne/csl-orig/v02
 mkdir cologne/csl-orig/v02/abch
-cp ../csl-orig/abch/abch.txt ../csl-orig/v02/abch/
+cp ../csl-orig/abch/abch.txt cologne/csl-orig/v02/abch/
 cp ../csl-orig/abch/abch_hwextra.txt cologne/csl-orig/v02/abch/
 cp ../csl-orig/abch/abch-meta2.txt cologne/csl-orig/v02/abch/
 cp ../csl-orig/abch/abchheader.xml cologne/csl-orig/v02/abch/
@@ -875,7 +875,8 @@ THIS ENDS THE DOCUMENTATION BY JIM FOR ABCH DICTIONARY
 ----------------------------------
 
 # The following are some hecks for future dictionaries.
-# For updating only the required part of csl-orig, csl-pywork and csl-websanlexicon in kosha-dev/v5.1/convert/cologne folder.
+# For updating only the required part of csl-pywork and csl-websanlexicon in kosha-dev/v5.1/convert/cologne folder.
 Update sanskrit-lexicon/csl-pywork repo. (Manual)
 Open Meld and compare the differences in sanskrit-lexicon/csl-pywork/v02 and convert/csl-pywork/v02
 Whenever there is difference, Meld will show with blue or green colour. Shift on the "Right Arrow" on the top to copy the latest one to the convert/csl-pywork/v02 folder.
+Do the same for csl-websanlexicon and csl-orig repositories.

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- dtd template for koshas -->
+%if dictlo == 'abch':
+<!-- dtd for abch.xml -->
+<!ELEMENT ${dictlo} (H1)*>
+<!ELEMENT H1 (h,body,tail) >
+<!ELEMENT h  (key1,key2)>
+<!ELEMENT body (hwdetails,entrydetails)>
+<!ELEMENT tail (L,pc)>
+<!ELEMENT hwdetails (hwdetail)*>
+<!ELEMENT hwdetail (eid,syns)>
+<!ELEMENT eid (#PCDATA) >
+<!ELEMENT syns (s)>
+<!ELEMENT entrydetails (entrydetail)*>
+<!ELEMENT entrydetail (s) >
+<!ELEMENT s (#PCDATA) >
+<!ELEMENT key1 (#PCDATA) >
+<!ELEMENT key2 (#PCDATA )>
+<!ELEMENT hom (#PCDATA)>
+<!ELEMENT L (#PCDATA) >
+<!ELEMENT pc (#PCDATA) >
+%elif dictlo == 'anhk':
+<!-- dtd for (sample) anhk.xml -->
+<!ELEMENT ${dictlo} (H1)*>
+<!ELEMENT H1 (h,body,tail) >
+<!ELEMENT h  (key1,key2)>
+<!ELEMENT body (hwdetails,entrydetails)>
+<!ELEMENT tail (L,pc)>
+<!ELEMENT hwdetails (hwdetail)*>
+<!ELEMENT hwdetail (hw,meaning)>
+<!ELEMENT hw (s)>  <!-- ~ eid -->
+<!ELEMENT meaning (s)> <!-- ~ syns -->
+<!ELEMENT entrydetails (entrydetail)*>
+<!ELEMENT entrydetail (s) >
+<!ELEMENT s (#PCDATA) >
+<!ELEMENT key1 (#PCDATA) >
+<!ELEMENT key2 (#PCDATA )>
+<!ELEMENT hom (#PCDATA)>
+<!ELEMENT L (#PCDATA) >
+<!ELEMENT pc (#PCDATA) >
+%endif
