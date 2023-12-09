@@ -53,7 +53,7 @@ class BasicAdjust {
 
  public function line_adjust($line) {
  $dbg = false;
- if (in_array($this->dict,array('abch'))) {
+ if (in_array($this->dict,array('abch', 'acph'))) {
   // for koshas like abch
   $line = preg_replace('|<hwdetails>(.*?)</hwdetails>|',
          '<div style="background-color: beige;">\1</div>',$line);
@@ -113,7 +113,10 @@ class BasicAdjust {
   // if ($line1 != $line) {dbgprint(true," dbg: line=$line\nline1=$line1\n");}
   $line = $line1;
  }
-
+ // 11-26-2023
+ if (in_array($this->getParms->dict,array('pw'))) {
+  $line = preg_replace('|<lang(.*?)>(.*?)</lang>|', '<ab\1>\2</ab>',$line);
+ }
  /* 08-02-2023
     For bhs,  change <lex>X</lex>, <lang>X</lang>, <ed>X</ed>, <ms>X</ms>
     to <ab>X</ab>

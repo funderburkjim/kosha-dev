@@ -359,7 +359,7 @@ public function __construct($key,$string_or_array,$filterin,$dict) {
      }else {
       return "<div>";
      }
-   } else if ($this->dict == 'abch') {
+   } else if ($this->dict == 'abch', 'acph') {
     if (isset($attribs['style'])) {
     $style=$attribs['style'];
     $ans = "<div style='$style'>";
@@ -662,7 +662,7 @@ public function __construct($key,$string_or_array,$filterin,$dict) {
   } else if ($el == "i"){
    $this->row .= "</i>"; 
   } else if ($el == "pb"){
-   if (in_array($this->dict,array("mw","bur","stc","abch"))) {
+   if (in_array($this->dict,array("mw","bur","stc","abch","acph"))) {
     # do nothing
    }else {
     $this->row .= "<br/>";
