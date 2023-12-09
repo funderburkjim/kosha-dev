@@ -156,7 +156,8 @@ if __name__ == "__main__":
    batch.append(row)
 %else:
  nrow = len(lines)
- for line in lines:
+ batch = []
+ for line0 in lines:
   line = line0.rstrip('\r\n')
   if not line.startswith('<H'):
    continue

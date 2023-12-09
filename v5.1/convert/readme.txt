@@ -23,7 +23,7 @@ cd /c/xampp/htdocs/kosha-dev/v5.1/convert/
 cp -r /c/xampp/htdocs/cologne/csl-pywork/ cologne/
 cd cologne/csl-pywork
 rm -r -f .git  # remove git
-# remove everything but csl-pywork/v02 (manual)
+# remove everything but csl-websanlexicon/v02 (manual)
 
 3. csl-orig
 # we don't copy all the other dictionaries !
@@ -871,3 +871,11 @@ git commit -m "convert dev version 5.1 to cdsl
 Ref: https://github.com/funderburkjim/kosha-dev/issues/23"
 git push
 
+THIS ENDS THE DOCUMENTATION BY JIM FOR ABCH DICTIONARY
+----------------------------------
+
+# The following are some hecks for future dictionaries.
+# For updating only the required part of csl-orig, csl-pywork and csl-websanlexicon in kosha-dev/v5.1/convert/cologne folder.
+Update sanskrit-lexicon/csl-pywork repo. (Manual)
+Open Meld and compare the differences in sanskrit-lexicon/csl-pywork/v02 and convert/csl-pywork/v02
+Whenever there is difference, Meld will show with blue or green colour. Shift on the "Right Arrow" on the top to copy the latest one to the convert/csl-pywork/v02 folder.
