@@ -1,0 +1,11 @@
+0009 a          avyayIBAva,indeclineable
+0129 klI        klIba,neuter
+0333 puM        puMs,masculine
+0001 puMdvi     puMs dvivacana,masculine dual
+0018 puMklI     puMs klIba vA,masculine or neuter
+0005 puMstrI    puMs strI vA,masculine or feminine
+0139 strI       strI,feminine
+0002 strIba     strI bahuvacana,feminine plural
+0001 strIdvi    strI dvivacana,feminine dual
+0002 strIklI    strI klIba vA,feminine or neuter
+0001 tri        ?
